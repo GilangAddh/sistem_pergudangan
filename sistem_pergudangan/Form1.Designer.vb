@@ -24,6 +24,9 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.LblNama = New System.Windows.Forms.Label()
         Me.TxtNama = New System.Windows.Forms.TextBox()
+        Me.LblPassword = New System.Windows.Forms.Label()
+        Me.TxtPassword = New System.Windows.Forms.TextBox()
+        Me.BtnLogin = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'LblNama
@@ -42,11 +45,39 @@ Partial Class Form1
         Me.TxtNama.Size = New System.Drawing.Size(183, 20)
         Me.TxtNama.TabIndex = 1
         '
+        'LblPassword
+        '
+        Me.LblPassword.AutoSize = True
+        Me.LblPassword.Location = New System.Drawing.Point(13, 58)
+        Me.LblPassword.Name = "LblPassword"
+        Me.LblPassword.Size = New System.Drawing.Size(53, 13)
+        Me.LblPassword.TabIndex = 2
+        Me.LblPassword.Text = "Password"
+        '
+        'TxtPassword
+        '
+        Me.TxtPassword.Location = New System.Drawing.Point(70, 54)
+        Me.TxtPassword.Name = "TxtPassword"
+        Me.TxtPassword.Size = New System.Drawing.Size(183, 20)
+        Me.TxtPassword.TabIndex = 3
+        '
+        'BtnLogin
+        '
+        Me.BtnLogin.Location = New System.Drawing.Point(16, 84)
+        Me.BtnLogin.Name = "BtnLogin"
+        Me.BtnLogin.Size = New System.Drawing.Size(237, 23)
+        Me.BtnLogin.TabIndex = 4
+        Me.BtnLogin.Text = "Login"
+        Me.BtnLogin.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.BtnLogin)
+        Me.Controls.Add(Me.TxtPassword)
+        Me.Controls.Add(Me.LblPassword)
         Me.Controls.Add(Me.TxtNama)
         Me.Controls.Add(Me.LblNama)
         Me.Name = "Form1"
@@ -58,4 +89,7 @@ Partial Class Form1
 
     Friend WithEvents LblNama As Label
     Friend WithEvents TxtNama As TextBox
+    Friend WithEvents LblPassword As Label
+    Friend WithEvents TxtPassword As TextBox
+    Friend WithEvents BtnLogin As Button
 End Class
