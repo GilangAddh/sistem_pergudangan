@@ -27,6 +27,8 @@ Partial Class Form1
         Me.LblPassword = New System.Windows.Forms.Label()
         Me.TxtPassword = New System.Windows.Forms.TextBox()
         Me.BtnLogin = New System.Windows.Forms.Button()
+        Me.ListBoxAlamat = New System.Windows.Forms.ListBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'LblNama
@@ -63,18 +65,37 @@ Partial Class Form1
         '
         'BtnLogin
         '
-        Me.BtnLogin.Location = New System.Drawing.Point(16, 84)
+        Me.BtnLogin.Location = New System.Drawing.Point(12, 207)
         Me.BtnLogin.Name = "BtnLogin"
         Me.BtnLogin.Size = New System.Drawing.Size(237, 23)
         Me.BtnLogin.TabIndex = 4
         Me.BtnLogin.Text = "Login"
         Me.BtnLogin.UseVisualStyleBackColor = True
         '
+        'ListBoxAlamat
+        '
+        Me.ListBoxAlamat.FormattingEnabled = True
+        Me.ListBoxAlamat.Location = New System.Drawing.Point(70, 90)
+        Me.ListBoxAlamat.Name = "ListBoxAlamat"
+        Me.ListBoxAlamat.Size = New System.Drawing.Size(183, 95)
+        Me.ListBoxAlamat.TabIndex = 5
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(13, 90)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.TabIndex = 6
+        Me.Label1.Text = "Alamat"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.ListBoxAlamat)
         Me.Controls.Add(Me.BtnLogin)
         Me.Controls.Add(Me.TxtPassword)
         Me.Controls.Add(Me.LblPassword)
@@ -92,4 +113,6 @@ Partial Class Form1
     Friend WithEvents LblPassword As Label
     Friend WithEvents TxtPassword As TextBox
     Friend WithEvents BtnLogin As Button
+    Friend WithEvents ListBoxAlamat As ListBox
+    Friend WithEvents Label1 As Label
 End Class
