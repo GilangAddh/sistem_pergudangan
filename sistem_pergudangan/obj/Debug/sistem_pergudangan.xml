@@ -22,16 +22,6 @@ sistem_pergudangan
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="P:sistem_pergudangan.My.Resources.Resources._exit">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:sistem_pergudangan.My.Resources.Resources.account">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:sistem_pergudangan.My.Resources.Resources.account1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -42,32 +32,12 @@ sistem_pergudangan
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:sistem_pergudangan.My.Resources.Resources.back">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:sistem_pergudangan.My.Resources.Resources.back__1_">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:sistem_pergudangan.My.Resources.Resources.back__2_">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:sistem_pergudangan.My.Resources.Resources.back_exit">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:sistem_pergudangan.My.Resources.Resources.lock">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:sistem_pergudangan.My.Resources.Resources.password">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
