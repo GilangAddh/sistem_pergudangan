@@ -35,6 +35,8 @@ Partial Class ResetAkun
         Me.PnlLogo = New System.Windows.Forms.Panel()
         Me.TxtResetEmail = New System.Windows.Forms.TextBox()
         Me.LblEmail = New System.Windows.Forms.Label()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.BtnImport = New System.Windows.Forms.Button()
         Me.ToolStripReset.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -68,7 +70,7 @@ Partial Class ResetAkun
         '
         Me.TxtResetKodeAkses.Location = New System.Drawing.Point(31, 281)
         Me.TxtResetKodeAkses.Name = "TxtResetKodeAkses"
-        Me.TxtResetKodeAkses.Size = New System.Drawing.Size(282, 20)
+        Me.TxtResetKodeAkses.Size = New System.Drawing.Size(212, 20)
         Me.TxtResetKodeAkses.TabIndex = 38
         '
         'LblResetKodeAkses
@@ -151,11 +153,25 @@ Partial Class ResetAkun
         Me.LblEmail.TabIndex = 43
         Me.LblEmail.Text = "Email Pegawai"
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'BtnImport
+        '
+        Me.BtnImport.Location = New System.Drawing.Point(249, 279)
+        Me.BtnImport.Name = "BtnImport"
+        Me.BtnImport.Size = New System.Drawing.Size(64, 23)
+        Me.BtnImport.TabIndex = 45
+        Me.BtnImport.Text = "Import"
+        Me.BtnImport.UseVisualStyleBackColor = True
+        '
         'ResetAkun
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(350, 373)
+        Me.Controls.Add(Me.BtnImport)
         Me.Controls.Add(Me.TxtResetEmail)
         Me.Controls.Add(Me.LblEmail)
         Me.Controls.Add(Me.PnlLogo)
@@ -190,4 +206,6 @@ Partial Class ResetAkun
     Friend WithEvents PnlLogo As Panel
     Friend WithEvents TxtResetEmail As TextBox
     Friend WithEvents LblEmail As Label
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents BtnImport As Button
 End Class

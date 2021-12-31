@@ -29,7 +29,6 @@ C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Daftar.resources
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Login.resources
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Resources.resources
-C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Pergudangan_ReadOnly.resources
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.ResetAkun.resources
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.ResetPassword.resources
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.vbproj.GenerateResource.cache
@@ -78,3 +77,11 @@ C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergu
 C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.exe
 C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.xml
 C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.pdb
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Transisi.resources
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Form_Barang.resources
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Akses_Barang.resources
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Add_Barang.resources
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Edit_Barang.resources
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Edit_Stock.resources
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Hapus_Barang.resources
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Info_Barang.resources

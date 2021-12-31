@@ -117,6 +117,19 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add Barang.Designer.vb">
+      <DependentUpon>Add Barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add Barang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Akses Barang.Designer.vb">
+      <DependentUpon>Akses Barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Akses Barang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barang.vb" />
     <Compile Include="BuatAkun.Designer.vb">
       <DependentUpon>BuatAkun.vb</DependentUpon>
     </Compile>
@@ -127,6 +140,36 @@
       <DependentUpon>Daftar.vb</DependentUpon>
     </Compile>
     <Compile Include="Daftar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Barang.Designer.vb">
+      <DependentUpon>Edit Barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Barang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Stock.Designer.vb">
+      <DependentUpon>Edit Stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Barang.Designer.vb">
+      <DependentUpon>Form Barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Barang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hapus Barang.Designer.vb">
+      <DependentUpon>Hapus Barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hapus Barang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info Barang.Designer.vb">
+      <DependentUpon>Info Barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Info Barang.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.vb">
@@ -140,6 +183,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -172,11 +216,32 @@
     <Compile Include="Users.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Add Barang.resx">
+      <DependentUpon>Add Barang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Akses Barang.resx">
+      <DependentUpon>Akses Barang.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuatAkun.resx">
       <DependentUpon>BuatAkun.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Daftar.resx">
       <DependentUpon>Daftar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Barang.resx">
+      <DependentUpon>Edit Barang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Stock.resx">
+      <DependentUpon>Edit Stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Barang.resx">
+      <DependentUpon>Form Barang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hapus Barang.resx">
+      <DependentUpon>Hapus Barang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info Barang.resx">
+      <DependentUpon>Info Barang.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>

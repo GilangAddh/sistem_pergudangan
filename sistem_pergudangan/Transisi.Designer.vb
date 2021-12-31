@@ -23,10 +23,10 @@ Partial Class Transisi
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.PnlLogo = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.BtnAksesJenisBarang = New System.Windows.Forms.Button()
+        Me.BtnAksesBarang = New System.Windows.Forms.Button()
+        Me.BtnAksesOrder = New System.Windows.Forms.Button()
+        Me.BtnMasukBarang = New System.Windows.Forms.Button()
         Me.ToolStripTransisi = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButtonBack = New System.Windows.Forms.ToolStripButton()
         Me.LblPilih = New System.Windows.Forms.Label()
@@ -37,46 +37,46 @@ Partial Class Transisi
         '
         Me.PnlLogo.BackgroundImage = Global.sistem_pergudangan.My.Resources.Resources.Adidas
         Me.PnlLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PnlLogo.Location = New System.Drawing.Point(65, 38)
+        Me.PnlLogo.Location = New System.Drawing.Point(59, 28)
         Me.PnlLogo.Name = "PnlLogo"
-        Me.PnlLogo.Size = New System.Drawing.Size(106, 60)
+        Me.PnlLogo.Size = New System.Drawing.Size(112, 74)
         Me.PnlLogo.TabIndex = 39
         '
-        'Button1
+        'BtnAksesJenisBarang
         '
-        Me.Button1.Location = New System.Drawing.Point(27, 162)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(171, 23)
-        Me.Button1.TabIndex = 40
-        Me.Button1.Text = "Akses Jenis Barang"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnAksesJenisBarang.Location = New System.Drawing.Point(27, 162)
+        Me.BtnAksesJenisBarang.Name = "BtnAksesJenisBarang"
+        Me.BtnAksesJenisBarang.Size = New System.Drawing.Size(171, 23)
+        Me.BtnAksesJenisBarang.TabIndex = 40
+        Me.BtnAksesJenisBarang.Text = "Akses Jenis Barang"
+        Me.BtnAksesJenisBarang.UseVisualStyleBackColor = True
         '
-        'Button2
+        'BtnAksesBarang
         '
-        Me.Button2.Location = New System.Drawing.Point(27, 212)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(171, 23)
-        Me.Button2.TabIndex = 41
-        Me.Button2.Text = "Akses Data Barang"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BtnAksesBarang.Location = New System.Drawing.Point(27, 212)
+        Me.BtnAksesBarang.Name = "BtnAksesBarang"
+        Me.BtnAksesBarang.Size = New System.Drawing.Size(171, 23)
+        Me.BtnAksesBarang.TabIndex = 41
+        Me.BtnAksesBarang.Text = "Akses Data Barang"
+        Me.BtnAksesBarang.UseVisualStyleBackColor = True
         '
-        'Button3
+        'BtnAksesOrder
         '
-        Me.Button3.Location = New System.Drawing.Point(27, 261)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(171, 23)
-        Me.Button3.TabIndex = 42
-        Me.Button3.Text = "Akses Order Barang"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.BtnAksesOrder.Location = New System.Drawing.Point(27, 261)
+        Me.BtnAksesOrder.Name = "BtnAksesOrder"
+        Me.BtnAksesOrder.Size = New System.Drawing.Size(171, 23)
+        Me.BtnAksesOrder.TabIndex = 42
+        Me.BtnAksesOrder.Text = "Akses Order Barang"
+        Me.BtnAksesOrder.UseVisualStyleBackColor = True
         '
-        'Button4
+        'BtnMasukBarang
         '
-        Me.Button4.Location = New System.Drawing.Point(27, 310)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(171, 23)
-        Me.Button4.TabIndex = 43
-        Me.Button4.Text = "Akses Masuk Barang"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.BtnMasukBarang.Location = New System.Drawing.Point(27, 310)
+        Me.BtnMasukBarang.Name = "BtnMasukBarang"
+        Me.BtnMasukBarang.Size = New System.Drawing.Size(171, 23)
+        Me.BtnMasukBarang.TabIndex = 43
+        Me.BtnMasukBarang.Text = "Akses Masuk Barang"
+        Me.BtnMasukBarang.UseVisualStyleBackColor = True
         '
         'ToolStripTransisi
         '
@@ -99,10 +99,10 @@ Partial Class Transisi
         'LblPilih
         '
         Me.LblPilih.AutoSize = True
-        Me.LblPilih.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblPilih.Location = New System.Drawing.Point(24, 123)
+        Me.LblPilih.Font = New System.Drawing.Font("Verdana", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblPilih.Location = New System.Drawing.Point(12, 126)
         Me.LblPilih.Name = "LblPilih"
-        Me.LblPilih.Size = New System.Drawing.Size(135, 13)
+        Me.LblPilih.Size = New System.Drawing.Size(104, 12)
         Me.LblPilih.TabIndex = 45
         Me.LblPilih.Text = "Pilih Akses Gudang:"
         '
@@ -113,10 +113,10 @@ Partial Class Transisi
         Me.ClientSize = New System.Drawing.Size(222, 356)
         Me.Controls.Add(Me.LblPilih)
         Me.Controls.Add(Me.ToolStripTransisi)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BtnMasukBarang)
+        Me.Controls.Add(Me.BtnAksesOrder)
+        Me.Controls.Add(Me.BtnAksesBarang)
+        Me.Controls.Add(Me.BtnAksesJenisBarang)
         Me.Controls.Add(Me.PnlLogo)
         Me.Name = "Transisi"
         Me.Text = "Transisi"
@@ -128,10 +128,10 @@ Partial Class Transisi
     End Sub
 
     Friend WithEvents PnlLogo As Panel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents BtnAksesJenisBarang As Button
+    Friend WithEvents BtnAksesBarang As Button
+    Friend WithEvents BtnAksesOrder As Button
+    Friend WithEvents BtnMasukBarang As Button
     Friend WithEvents ToolStripTransisi As ToolStrip
     Friend WithEvents ToolStripButtonBack As ToolStripButton
     Friend WithEvents LblPilih As Label

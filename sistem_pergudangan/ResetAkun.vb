@@ -1,4 +1,6 @@
-﻿Public Class ResetAkun
+﻿Imports System.IO
+
+Public Class ResetAkun
 
     Public Shared users As Users
 
@@ -35,6 +37,20 @@
             Me.Hide()
         Else
             MessageBox.Show("Akses Pemulihan Ditolak")
+        End If
+    End Sub
+
+    Private Sub BtnImport_Click(sender As Object, e As EventArgs) Handles BtnImport.Click
+        Dim fileReader As System.IO.StreamReader
+        OpenFileDialog1.InitialDirectory = "~\Documents"
+        OpenFileDialog1.Title = "Pilih File Kode Akses"
+        OpenFileDialog1.Filter = "Text File [*.txt]|*.txt|All Files [*.*]|*.*"
+
+        If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+            OpenFileDialog1.OpenFile()
+            fileReader = File.OpenText(OpenFileDialog1.FileName)
+            TxtResetKodeAkses.Text = fileReader.ReadToEnd() '
+            fileReader.Close() '
         End If
     End Sub
 End Class

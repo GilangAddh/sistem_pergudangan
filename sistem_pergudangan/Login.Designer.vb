@@ -37,13 +37,16 @@ Partial Class Login
         Me.PnlUsername = New System.Windows.Forms.Panel()
         Me.PnlLogo = New System.Windows.Forms.Panel()
         Me.ColorDialogLink = New System.Windows.Forms.ColorDialog()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'LblCaptUsername
         '
         Me.LblCaptUsername.AutoSize = True
         Me.LblCaptUsername.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblCaptUsername.Location = New System.Drawing.Point(65, 152)
+        Me.LblCaptUsername.Location = New System.Drawing.Point(62, 168)
         Me.LblCaptUsername.Name = "LblCaptUsername"
         Me.LblCaptUsername.Size = New System.Drawing.Size(65, 13)
         Me.LblCaptUsername.TabIndex = 1
@@ -53,7 +56,7 @@ Partial Class Login
         '
         Me.LblCaptPassword.AutoSize = True
         Me.LblCaptPassword.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblCaptPassword.Location = New System.Drawing.Point(65, 218)
+        Me.LblCaptPassword.Location = New System.Drawing.Point(62, 234)
         Me.LblCaptPassword.Name = "LblCaptPassword"
         Me.LblCaptPassword.Size = New System.Drawing.Size(61, 13)
         Me.LblCaptPassword.TabIndex = 2
@@ -61,21 +64,21 @@ Partial Class Login
         '
         'TxtUsername
         '
-        Me.TxtUsername.Location = New System.Drawing.Point(68, 178)
+        Me.TxtUsername.Location = New System.Drawing.Point(65, 194)
         Me.TxtUsername.Name = "TxtUsername"
         Me.TxtUsername.Size = New System.Drawing.Size(223, 20)
         Me.TxtUsername.TabIndex = 3
         '
         'TxtPassword
         '
-        Me.TxtPassword.Location = New System.Drawing.Point(68, 246)
+        Me.TxtPassword.Location = New System.Drawing.Point(65, 262)
         Me.TxtPassword.Name = "TxtPassword"
         Me.TxtPassword.Size = New System.Drawing.Size(223, 20)
         Me.TxtPassword.TabIndex = 4
         '
         'BtnLogin
         '
-        Me.BtnLogin.Location = New System.Drawing.Point(155, 286)
+        Me.BtnLogin.Location = New System.Drawing.Point(152, 302)
         Me.BtnLogin.Name = "BtnLogin"
         Me.BtnLogin.Size = New System.Drawing.Size(136, 23)
         Me.BtnLogin.TabIndex = 7
@@ -84,7 +87,7 @@ Partial Class Login
         '
         'BtnClear
         '
-        Me.BtnClear.Location = New System.Drawing.Point(68, 286)
+        Me.BtnClear.Location = New System.Drawing.Point(65, 302)
         Me.BtnClear.Name = "BtnClear"
         Me.BtnClear.Size = New System.Drawing.Size(81, 23)
         Me.BtnClear.TabIndex = 8
@@ -95,7 +98,7 @@ Partial Class Login
         '
         Me.LblLupaAkun.AutoSize = True
         Me.LblLupaAkun.Font = New System.Drawing.Font("Verdana", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblLupaAkun.Location = New System.Drawing.Point(89, 321)
+        Me.LblLupaAkun.Location = New System.Drawing.Point(86, 337)
         Me.LblLupaAkun.Name = "LblLupaAkun"
         Me.LblLupaAkun.Size = New System.Drawing.Size(86, 12)
         Me.LblLupaAkun.TabIndex = 9
@@ -106,7 +109,7 @@ Partial Class Login
         Me.LblReset.AutoSize = True
         Me.LblReset.Font = New System.Drawing.Font("Verdana", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblReset.ForeColor = System.Drawing.Color.Blue
-        Me.LblReset.Location = New System.Drawing.Point(171, 321)
+        Me.LblReset.Location = New System.Drawing.Point(168, 337)
         Me.LblReset.Name = "LblReset"
         Me.LblReset.Size = New System.Drawing.Size(97, 12)
         Me.LblReset.TabIndex = 10
@@ -116,7 +119,7 @@ Partial Class Login
         '
         Me.LblAtau.AutoSize = True
         Me.LblAtau.Font = New System.Drawing.Font("Verdana", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblAtau.Location = New System.Drawing.Point(165, 349)
+        Me.LblAtau.Location = New System.Drawing.Point(162, 365)
         Me.LblAtau.Name = "LblAtau"
         Me.LblAtau.Size = New System.Drawing.Size(29, 12)
         Me.LblAtau.TabIndex = 11
@@ -127,7 +130,7 @@ Partial Class Login
         Me.LblDaftar.AutoSize = True
         Me.LblDaftar.Font = New System.Drawing.Font("Verdana", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblDaftar.ForeColor = System.Drawing.Color.Blue
-        Me.LblDaftar.Location = New System.Drawing.Point(211, 379)
+        Me.LblDaftar.Location = New System.Drawing.Point(208, 395)
         Me.LblDaftar.Name = "LblDaftar"
         Me.LblDaftar.Size = New System.Drawing.Size(36, 12)
         Me.LblDaftar.TabIndex = 14
@@ -137,7 +140,7 @@ Partial Class Login
         '
         Me.LblBelumPunyaAkun.AutoSize = True
         Me.LblBelumPunyaAkun.Font = New System.Drawing.Font("Verdana", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblBelumPunyaAkun.Location = New System.Drawing.Point(110, 379)
+        Me.LblBelumPunyaAkun.Location = New System.Drawing.Point(107, 395)
         Me.LblBelumPunyaAkun.Name = "LblBelumPunyaAkun"
         Me.LblBelumPunyaAkun.Size = New System.Drawing.Size(105, 12)
         Me.LblBelumPunyaAkun.TabIndex = 13
@@ -147,7 +150,7 @@ Partial Class Login
         '
         Me.PnlPassword.BackgroundImage = Global.sistem_pergudangan.My.Resources.Resources.lock
         Me.PnlPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PnlPassword.Location = New System.Drawing.Point(22, 236)
+        Me.PnlPassword.Location = New System.Drawing.Point(19, 252)
         Me.PnlPassword.Name = "PnlPassword"
         Me.PnlPassword.Size = New System.Drawing.Size(33, 30)
         Me.PnlPassword.TabIndex = 6
@@ -156,7 +159,7 @@ Partial Class Login
         '
         Me.PnlUsername.BackgroundImage = Global.sistem_pergudangan.My.Resources.Resources.account1
         Me.PnlUsername.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PnlUsername.Location = New System.Drawing.Point(22, 168)
+        Me.PnlUsername.Location = New System.Drawing.Point(19, 184)
         Me.PnlUsername.Name = "PnlUsername"
         Me.PnlUsername.Size = New System.Drawing.Size(29, 30)
         Me.PnlUsername.TabIndex = 5
@@ -165,16 +168,35 @@ Partial Class Login
         '
         Me.PnlLogo.BackgroundImage = Global.sistem_pergudangan.My.Resources.Resources.Adidas
         Me.PnlLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PnlLogo.Location = New System.Drawing.Point(68, 22)
+        Me.PnlLogo.Location = New System.Drawing.Point(65, 38)
         Me.PnlLogo.Name = "PnlLogo"
         Me.PnlLogo.Size = New System.Drawing.Size(209, 100)
         Me.PnlLogo.TabIndex = 0
+        '
+        'ToolStrip1
+        '
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1})
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip1.Name = "ToolStrip1"
+        Me.ToolStrip1.Size = New System.Drawing.Size(331, 25)
+        Me.ToolStrip1.TabIndex = 15
+        Me.ToolStrip1.Text = "ToolStrip1"
+        '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton1.Image = Global.sistem_pergudangan.My.Resources.Resources.back_exit
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton1.Text = "ToolStripButton1"
         '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(341, 413)
+        Me.ClientSize = New System.Drawing.Size(331, 431)
+        Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.LblDaftar)
         Me.Controls.Add(Me.LblBelumPunyaAkun)
         Me.Controls.Add(Me.LblAtau)
@@ -191,6 +213,8 @@ Partial Class Login
         Me.Controls.Add(Me.PnlLogo)
         Me.Name = "Login"
         Me.Text = "Login"
+        Me.ToolStrip1.ResumeLayout(False)
+        Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -211,4 +235,6 @@ Partial Class Login
     Friend WithEvents LblDaftar As Label
     Friend WithEvents LblBelumPunyaAkun As Label
     Friend WithEvents ColorDialogLink As ColorDialog
+    Friend WithEvents ToolStrip1 As ToolStrip
+    Friend WithEvents ToolStripButton1 As ToolStripButton
 End Class

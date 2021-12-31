@@ -178,7 +178,7 @@ Public Class Users
             dbConn.Open()
             sqlCommand.Connection = dbConn
 
-            Dim queryAuth = "SELECT id_user, username, dir_foto FROM users
+            Dim queryAuth = "SELECT id_user, username, dir_foto, nama_pegawai FROM users
                             WHERE username='" & username_login & "' AND password='" & EncryptMD5(password_login) & "'"
 
             sqlCommand.CommandText = queryAuth
@@ -187,9 +187,10 @@ Public Class Users
 
             If sqlRead.HasRows Then
                 While sqlRead.Read
-                    result.Add(sqlRead.GetString(0).ToString())
+                    result.Add(sqlRead.GetString(0))
                     result.Add(sqlRead.GetString(1).ToString())
                     result.Add(sqlRead.GetString(2).ToString())
+                    result.Add(sqlRead.GetString(3).ToString())
                 End While
             End If
 
