@@ -79,9 +79,9 @@ Partial Class ResetAkun
         Me.LblResetKodeAkses.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblResetKodeAkses.Location = New System.Drawing.Point(28, 254)
         Me.LblResetKodeAkses.Name = "LblResetKodeAkses"
-        Me.LblResetKodeAkses.Size = New System.Drawing.Size(74, 13)
+        Me.LblResetKodeAkses.Size = New System.Drawing.Size(147, 13)
         Me.LblResetKodeAkses.TabIndex = 37
-        Me.LblResetKodeAkses.Text = "Kode Akses"
+        Me.LblResetKodeAkses.Text = "Kode Akses Pendaftaran"
         '
         'TxtResetNamaPegawai
         '

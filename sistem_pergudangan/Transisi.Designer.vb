@@ -99,10 +99,10 @@ Partial Class Transisi
         'LblPilih
         '
         Me.LblPilih.AutoSize = True
-        Me.LblPilih.Font = New System.Drawing.Font("Verdana", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblPilih.Location = New System.Drawing.Point(12, 126)
+        Me.LblPilih.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblPilih.Location = New System.Drawing.Point(12, 128)
         Me.LblPilih.Name = "LblPilih"
-        Me.LblPilih.Size = New System.Drawing.Size(104, 12)
+        Me.LblPilih.Size = New System.Drawing.Size(135, 13)
         Me.LblPilih.TabIndex = 45
         Me.LblPilih.Text = "Pilih Akses Gudang:"
         '

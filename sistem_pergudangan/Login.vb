@@ -22,8 +22,6 @@
 
         If data_user.Count > 0 Then
             users.UsernameProperty = data_user(1)
-            users.Dir_fotoProperty = data_user(2)
-            users.Nama_pegawaiProperty = data_user(3)
             MessageBox.Show("Selamat datang " + users.UsernameProperty + "!")
             transisi.Show()
             Me.Hide()
@@ -73,7 +71,7 @@
     End Sub
 
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
-        MessageBox.Show("Sistem Dimatikan")
+        MessageBox.Show("Sistem Ditutup")
         Me.Close()
     End Sub
 End Class
