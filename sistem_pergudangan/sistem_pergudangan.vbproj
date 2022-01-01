@@ -123,10 +123,29 @@
     <Compile Include="BuatAkun.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ClassJenisBarang.vb" />
     <Compile Include="Daftar.Designer.vb">
       <DependentUpon>Daftar.vb</DependentUpon>
     </Compile>
     <Compile Include="Daftar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditJenisBarang.Designer.vb">
+      <DependentUpon>EditJenisBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditJenisBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HapusJenisBarang.Designer.vb">
+      <DependentUpon>HapusJenisBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HapusJenisBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JenisBarang.Designer.vb">
+      <DependentUpon>JenisBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JenisBarang.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.vb">
@@ -163,6 +182,12 @@
     <Compile Include="ResetPassword.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TambahJenisBarang.Designer.vb">
+      <DependentUpon>TambahJenisBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TambahJenisBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Transisi.Designer.vb">
       <DependentUpon>Transisi.vb</DependentUpon>
     </Compile>
@@ -178,6 +203,12 @@
     <EmbeddedResource Include="Daftar.resx">
       <DependentUpon>Daftar.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditJenisBarang.resx">
+      <DependentUpon>EditJenisBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JenisBarang.resx">
+      <DependentUpon>JenisBarang.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ResetPassword.resx">
       <DependentUpon>ResetPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahJenisBarang.resx">
+      <DependentUpon>TambahJenisBarang.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transisi.resx">
       <DependentUpon>Transisi.vb</DependentUpon>
