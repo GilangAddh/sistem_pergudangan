@@ -142,6 +142,12 @@
     <Compile Include="HapusJenisBarang.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="InfoJenisBarang.Designer.vb">
+      <DependentUpon>InfoJenisBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InfoJenisBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="JenisBarang.Designer.vb">
       <DependentUpon>JenisBarang.vb</DependentUpon>
     </Compile>
@@ -159,6 +165,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -205,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditJenisBarang.resx">
       <DependentUpon>EditJenisBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoJenisBarang.resx">
+      <DependentUpon>InfoJenisBarang.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JenisBarang.resx">
       <DependentUpon>JenisBarang.vb</DependentUpon>

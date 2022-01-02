@@ -32,6 +32,7 @@ Partial Class TambahJenisBarang
         Me.TxtCatatanLimit = New System.Windows.Forms.TextBox()
         Me.BtnTambahCatatan = New System.Windows.Forms.Button()
         Me.BtnTambahJenisBarang = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SuspendLayout()
         '
         'LblTitle
@@ -108,9 +109,9 @@ Partial Class TambahJenisBarang
         Me.TxtCatatanLimit.Location = New System.Drawing.Point(298, 205)
         Me.TxtCatatanLimit.Name = "TxtCatatanLimit"
         Me.TxtCatatanLimit.ReadOnly = True
-        Me.TxtCatatanLimit.Size = New System.Drawing.Size(25, 25)
+        Me.TxtCatatanLimit.Size = New System.Drawing.Size(27, 25)
         Me.TxtCatatanLimit.TabIndex = 7
-        Me.TxtCatatanLimit.Text = "50"
+        Me.TxtCatatanLimit.Text = "255"
         Me.TxtCatatanLimit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'BtnTambahCatatan
@@ -132,6 +133,10 @@ Partial Class TambahJenisBarang
         Me.BtnTambahJenisBarang.TabIndex = 9
         Me.BtnTambahJenisBarang.Text = "Tambah"
         Me.BtnTambahJenisBarang.UseVisualStyleBackColor = True
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'TambahJenisBarang
         '
@@ -165,4 +170,5 @@ Partial Class TambahJenisBarang
     Friend WithEvents TxtCatatanLimit As TextBox
     Friend WithEvents BtnTambahCatatan As Button
     Friend WithEvents BtnTambahJenisBarang As Button
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
