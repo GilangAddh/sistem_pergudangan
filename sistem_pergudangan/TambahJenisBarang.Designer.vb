@@ -111,7 +111,7 @@ Partial Class TambahJenisBarang
         Me.TxtCatatanLimit.ReadOnly = True
         Me.TxtCatatanLimit.Size = New System.Drawing.Size(27, 25)
         Me.TxtCatatanLimit.TabIndex = 7
-        Me.TxtCatatanLimit.Text = "255"
+        Me.TxtCatatanLimit.Text = "100"
         Me.TxtCatatanLimit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'BtnTambahCatatan

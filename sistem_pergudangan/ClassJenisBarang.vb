@@ -1,8 +1,23 @@
-﻿Public Class ClassJenisBarang
+﻿Imports MySql.Data.MySqlClient
+Imports System.Text
+
+Public Class ClassJenisBarang
     Private jenisBarang As String
     Private satuan As String
     Private catatan As String
-    Private maxCatatan As Integer = 255
+    Private maxCatatan As Integer = 100
+
+    Private KoleksiDataTable As New ArrayList()
+
+    Public Shared dbConn As New MySqlConnection
+    Public Shared sqlCommand As New MySqlCommand
+    Public Shared sqlRead As MySqlDataReader
+    Private sqlQuery As String
+
+    Private server As String = "localhost"
+    Private username As String = "root"
+    Private password As String = ""
+    Private database As String = "pergudangan"
 
     Public Property jenisBarangProperty() As String
         Get
@@ -39,6 +54,91 @@
             maxCatatan = value
         End Set
     End Property
+
+    Public Function AddKoleksiDataTable(jenis_barang As String,
+                                        satuan As String,
+                                        catatan As String)
+
+        KoleksiDataTable.Add({jenisBarang,
+                             satuan,
+                             catatan})
+
+    End Function
+
+    Public Function RemoveKoleksiDataTable(index As Integer)
+        KoleksiDataTable.RemoveAt(index)
+    End Function
+
+    Public ReadOnly Property GetKoleksiDataTable() As ArrayList
+        Get
+            Return KoleksiDataTable
+        End Get
+
+    End Property
+
+    Public Function ConvertKoleksiToString(vals As List(Of String))
+        Dim builder As StringBuilder = New StringBuilder()
+        For Each val As String In vals
+            builder.Append(val).Append("|")
+        Next
+
+        Dim res = builder.ToString()
+        Return res
+    End Function
+
+    Public Function ConvertStringToKoleksi(value As String)
+        Dim Arr() As String = value.Split("|")
+
+        Dim vals As List(Of String) = Arr.ToList
+    End Function
+
+    Public Function GetDataKoleksiDatabase() As DataTable
+        Dim result As New DataTable
+
+        dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" + "password =" + password + ";" + "database =" + database
+        dbConn.Open()
+        sqlCommand.Connection = dbConn
+        sqlCommand.CommandText = "SELECT id_jenis_barang AS 'ID',
+                                  jenis_barang AS 'jenis_barang',
+                                  satuan AS 'satuan',
+                                  catatan AS 'catatan'
+                                  FROM jenis_barang"
+
+        sqlRead = sqlCommand.ExecuteReader
+
+        result.Load(sqlRead)
+        sqlRead.Close()
+        dbConn.Close()
+        Return result
+    End Function
+
+    Public Function AddDataKoleksiDatabase(jenis_barang As String,
+                                           satuan As String,
+                                           Catatan As String)
+        dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" + "password =" + password + ";" + "database =" + database
+        Try
+            dbConn.Open()
+            sqlCommand.Connection = dbConn
+            sqlQuery = "INSERT INTO jenis_barang(jenis_barang, satuan, catatan) VALUE('" _
+            & jenis_barang & "','" _
+            & satuan & "','" _
+            & Catatan & "')"
+
+            sqlCommand = New MySqlCommand(sqlQuery, dbConn)
+            sqlRead = sqlCommand.ExecuteReader
+            dbConn.Close()
+
+            sqlRead.Close()
+            dbConn.Close()
+        Catch ex As Exception
+            Return ex.Message
+        Finally
+            dbConn.Dispose()
+        End Try
+    End Function
+
+
+
 
 
 

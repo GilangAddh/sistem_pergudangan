@@ -11,13 +11,29 @@ Public Class TambahJenisBarang
 
     End Sub
     Private Sub BtnTambahJenisBarang_Click(sender As Object, e As EventArgs) Handles BtnTambahJenisBarang.Click
-        JenisBarang.ClassJenisBarang.jenisBarangProperty = TxtInputJenisBarang.Text
-        JenisBarang.ClassJenisBarang.satuanProperty = TxtInputSatuan.Text
-        JenisBarang.ClassJenisBarang.catatanProperty = RtxInputCatatan.Text
+        Dim ConvertedKoleksi = JenisBarang.ClassJenisBarang.ConvertKoleksiToString(JenisBarang.ClassJenisBarang.get)
+        JenisBarang.ClassJenisBarang.AddDataKoleksiDatabase(JenisBarang.ClassJenisBarang.jenisBarangProperty,
+                                                            JenisBarang.ClassJenisBarang.satuanProperty,
+                                                            JenisBarang.ClassJenisBarang.catatanProperty,
+                                                            convertedKoleksi)
+
+        '        JenisBarang.ClassJenisBarang.jenisBarangProperty = TxtInputJenisBarang.Text
+        'JenisBarang.ClassJenisBarang.satuanProperty = TxtInputSatuan.Text
+        'JenisBarang.ClassJenisBarang.catatanProperty = RtxInputCatatan.Text
+
 
         Dim InfoJenisBarang As New InfoJenisBarang
         InfoJenisBarang.Show()
         Me.Close()
+    End Sub
+
+    Private Sub RtxInputCatatan_KeyPress(sender As Object, e As KeyPressEventArgs) Handles RtxInputCatatan.KeyPress
+        If RtxInputCatatan.Text.Length >= JenisBarang.ClassJenisBarang.maxCatatanroperty Then
+            If e.KeyChar <> ControlChars.Back Then
+                e.Handled = True
+                MessageBox.Show("Max Length")
+            End If
+        End If
     End Sub
 
     Private Sub RtxInputCatatan_TextChanged(sender As Object, e As EventArgs) Handles RtxInputCatatan.TextChanged
@@ -26,6 +42,7 @@ Public Class TambahJenisBarang
             MessageBox.Show("Max Limit!!!")
 
         End If
+
 
 
 
@@ -45,4 +62,6 @@ Public Class TambahJenisBarang
 
 
     End Sub
+
+
 End Class
