@@ -178,7 +178,7 @@ Partial Class Form_Barang
         Me.BtnAksesBarang.Name = "BtnAksesBarang"
         Me.BtnAksesBarang.Size = New System.Drawing.Size(140, 23)
         Me.BtnAksesBarang.TabIndex = 52
-        Me.BtnAksesBarang.Text = "Akses Barang"
+        Me.BtnAksesBarang.Text = "Akses Data Barang"
         Me.BtnAksesBarang.UseVisualStyleBackColor = True
         '
         'BtnEditStock
