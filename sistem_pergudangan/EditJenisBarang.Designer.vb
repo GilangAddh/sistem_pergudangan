@@ -51,7 +51,7 @@ Partial Class EditJenisBarang
         Me.TxtCatatanLimit.ReadOnly = True
         Me.TxtCatatanLimit.Size = New System.Drawing.Size(25, 25)
         Me.TxtCatatanLimit.TabIndex = 17
-        Me.TxtCatatanLimit.Text = "50"
+        Me.TxtCatatanLimit.Text = "100"
         Me.TxtCatatanLimit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'RtxCatatan

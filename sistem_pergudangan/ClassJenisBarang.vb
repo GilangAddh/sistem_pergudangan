@@ -137,7 +137,62 @@ Public Class ClassJenisBarang
         End Try
     End Function
 
+    Public Function GetDataKoleksiByIDDatabase(ID As Integer) As List(Of String)
+        Dim Result As New List(Of String)
 
+        dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" + "password =" + password + ";" + "database =" + database
+        dbConn.Open()
+        sqlCommand.Connection = dbConn
+        sqlCommand.CommandText = "SELECT id_jenis_barang,
+                                    jenis_barang,
+                                    satuan,
+                                    catatan
+                                    FROM jenis_barang
+                                    Where id_jenis_barang ='" & ID & "'"
+
+        sqlRead = sqlCommand.ExecuteReader
+
+        While sqlRead.Read
+            Result.Add(sqlRead.GetString(0).ToString())
+            Result.Add(sqlRead.GetString(1).ToString())
+            Result.Add(sqlRead.GetString(2).ToString())
+            Result.Add(sqlRead.GetString(3).ToString())
+            'Result.Add(sqlRead.GetString(4).ToString())
+        End While
+
+        sqlRead.Close()
+        dbConn.Close()
+        Return Result
+
+    End Function
+
+    Public Function UpdateDataKoleksiByIDDatabase(ID As Integer,
+                                                  jenis_barang As String,
+                                                  satuan As String,
+                                                  catatan As String)
+
+        dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" + "password =" + password + ";" + "database =" + database
+
+        Try
+            dbConn.Open()
+            sqlCommand.Connection = dbConn
+            sqlQuery = "UPDATE jenis_barang  SET " &
+                       "jenis_barang='" & jenis_barang & "'," &
+                       "satuan='" & satuan & "'," &
+                       "catatan='" & catatan & "'," &
+                       "WHERE id_koleksi='" & ID & "'"
+            sqlRead.Close()
+            dbConn.Close()
+
+        Catch ex As Exception
+            Return ex.Message
+        Finally
+            dbConn.Dispose()
+        End Try
+
+
+
+    End Function
 
 
 

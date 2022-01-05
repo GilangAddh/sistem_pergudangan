@@ -1,6 +1,7 @@
 ﻿Public Class JenisBarang
     Public Shared ClassJenisBarang As ClassJenisBarang
-    Dim Selectedtablekolesi
+    Public SelectedTableKoleksi
+    Public SelectedTableKoleksiJenis
 
 
     Public Sub New()
@@ -25,7 +26,7 @@
     End Sub
 
     Public Sub UpdateDataTableArrayList()
-        DataGridJenisBarang.Rows.Clear()
+        'DataGridJenisBarang.Rows.Clear()
 
         For Each rowKoleksi In ClassJenisBarang.GetKoleksiDataTable()
             Dim dataTable As String() = {rowKoleksi(1),
@@ -46,6 +47,17 @@
     End Sub
 
     Private Sub BtnEditJenis_Click(sender As Object, e As EventArgs) Handles BtnEditJenis.Click
+        Dim SelectedKoleksi As List(Of String) = ClassJenisBarang.GetDataKoleksiByIDDatabase(SelectedTableKoleksi)
+
+        ClassJenisBarang.jenisBarangProperty = SelectedKoleksi(1)
+        ClassJenisBarang.satuanProperty = SelectedKoleksi(2)
+        ClassJenisBarang.catatanProperty = SelectedKoleksi(3)
+
+        'For Each info_kategori In data_kategori
+
+        'Next
+
+
         Dim EditJenisBarang As New EditJenisBarang
         EditJenisBarang.Show()
 
@@ -58,6 +70,14 @@
     End Sub
 
     Private Sub DataGridJenisBarang_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridJenisBarang.CellClick
-        Selectedtablekolesi = DataGridJenisBarang.CurrentRow.Index
+        'Selectedtablekolesi = DataGridJenisBarang.CurrentRow.Index
+        Dim index As Integer = e.RowIndex
+        Dim SelectedRow As DataGridViewRow
+        SelectedRow = DataGridJenisBarang.Rows(index)
+
+        SelectedTableKoleksi = SelectedRow.Cells(0).Value
+        SelectedTableKoleksiJenis = SelectedRow.Cells(1).Value
+
+
     End Sub
 End Class

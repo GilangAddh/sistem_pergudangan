@@ -11,15 +11,17 @@ Public Class TambahJenisBarang
 
     End Sub
     Private Sub BtnTambahJenisBarang_Click(sender As Object, e As EventArgs) Handles BtnTambahJenisBarang.Click
-        Dim ConvertedKoleksi = JenisBarang.ClassJenisBarang.ConvertKoleksiToString(JenisBarang.ClassJenisBarang.get)
-        JenisBarang.ClassJenisBarang.AddDataKoleksiDatabase(JenisBarang.ClassJenisBarang.jenisBarangProperty,
-                                                            JenisBarang.ClassJenisBarang.satuanProperty,
-                                                            JenisBarang.ClassJenisBarang.catatanProperty,
-                                                            convertedKoleksi)
+        ' Dim ConvertedKoleksi = JenisBarang.ClassJenisBarang.ConvertKoleksiToString(JenisBarang.ClassJenisBarang.get)
 
-        '        JenisBarang.ClassJenisBarang.jenisBarangProperty = TxtInputJenisBarang.Text
-        'JenisBarang.ClassJenisBarang.satuanProperty = TxtInputSatuan.Text
-        'JenisBarang.ClassJenisBarang.catatanProperty = RtxInputCatatan.Text
+
+        JenisBarang.ClassJenisBarang.jenisBarangProperty = TxtInputJenisBarang.Text
+        JenisBarang.ClassJenisBarang.satuanProperty = TxtInputSatuan.Text
+        JenisBarang.ClassJenisBarang.catatanProperty = RtxInputCatatan.Text
+
+        JenisBarang.ClassJenisBarang.AddDataKoleksiDatabase(JenisBarang.ClassJenisBarang.jenisBarangProperty,
+                                                                JenisBarang.ClassJenisBarang.satuanProperty,
+                                                                JenisBarang.ClassJenisBarang.catatanProperty
+                                                                )
 
 
         Dim InfoJenisBarang As New InfoJenisBarang
