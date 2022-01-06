@@ -83,6 +83,7 @@
         ReloadAllTableKatalogDatabase()
         colorStock()
         selectedTableKoleksi = Nothing
+        emptyInfo()
     End Sub
 
     Private Sub DataGridViewKatalog_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewKatalog.CellClick
@@ -94,6 +95,45 @@
             selectedTableKoleksi = selectedRow.Cells(0).Value
             selectedTableKoleksiNama = selectedRow.Cells(1).Value
             selectedTableKoleksiStock = selectedRow.Cells(4).Value
+
+            Dim selectedKatalog As List(Of String) = barang.GetDataKatalogByIDDatabase(selectedTableKoleksi)
+
+            barang.NamaBarangProperty = selectedKatalog(2)
+            barang.StockBarangProperty = selectedKatalog(3)
+            barang.GambarBarangProperty = selectedKatalog(4)
+            barang.JenisBarangProperty = selectedKatalog(1)
+            barang.DeskripsiProperty = selectedKatalog(5)
+            barang.TahunPembuatanProperty = selectedKatalog(6)
+            barang.TanggalMasukBarangProperty = selectedKatalog(7)
+            barang.LokasiPenyimpananProperty = selectedKatalog(9)
+            barang.KualitasProperty = selectedKatalog(10)
+
+            Dim data_pasar As List(Of String) = barang.ConvertStringToKoleksi(selectedKatalog(11))
+            For Each info_pasar In data_pasar
+                barang.AddTargetPasar(info_pasar)
+            Next
+
+            If Not String.IsNullOrEmpty(barang.GambarBarangProperty) Then
+                PictureBoxGambar.Load(barang.GambarBarangProperty)
+                PictureBoxGambar.SizeMode = PictureBoxSizeMode.StretchImage
+            End If
+
+            LblNamaBarang.Text = barang.NamaBarangProperty
+            LblJenis.Text = barang.JenisBarangProperty
+            LblDeskripsi.Text = barang.DeskripsiProperty
+            LblTahun.Text = barang.TahunPembuatanProperty
+            LblTanggal.Text = barang.TanggalMasukBarangProperty
+            LblPerubahan.Text = barang.TerakhirPembaharuanProperty
+            LblLokasi.Text = barang.LokasiPenyimpananProperty
+            LblStock.Text = barang.StockBarangProperty
+            LblKualitas.Text = barang.KualitasProperty
+
+            ListBoxTargetPasar.Items.Clear()
+            For Each pasar In barang.getTargetPasar
+                ListBoxTargetPasar.Items.Add(pasar)
+            Next
+
+            barang.resetTargetPasar()
         Catch ex As Exception
             MessageBox.Show("Pilih satu katalog yang ada di tabel!")
         End Try
@@ -138,6 +178,7 @@
         CbxSortKatalog.SelectedItem() = Nothing
         TxtCariBarang.Text = Nothing
         ReloadAllTableKatalogDatabase()
+        emptyInfo()
     End Sub
 
     Private Sub colorStock()
@@ -161,5 +202,21 @@
         ElseIf CbxTampilkanBerdasarkan.SelectedItem() = "Kualitas" Then
             CbxSortKatalog.DataSource = kualitasSort
         End If
+    End Sub
+
+    Private Sub emptyInfo()
+
+        PictureBoxGambar.Image = Nothing
+        LblNamaBarang.Text = Nothing
+        LblJenis.Text = Nothing
+        LblDeskripsi.Text = Nothing
+        LblTahun.Text = Nothing
+        LblTanggal.Text = Nothing
+        LblPerubahan.Text = Nothing
+        LblLokasi.Text = Nothing
+        LblStock.Text = Nothing
+        LblKualitas.Text = Nothing
+
+        ListBoxTargetPasar.Items.Clear()
     End Sub
 End Class
