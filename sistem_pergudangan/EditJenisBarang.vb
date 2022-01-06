@@ -28,4 +28,24 @@
         infoJenisBarang.Show()
         Me.Close()
     End Sub
+
+    Private Sub RtxCatatan_TextChanged(sender As Object, e As EventArgs) Handles RtxCatatan.TextChanged
+        TxtCatatanLimit.Text = (JenisBarang.ClassJenisBarang.maxCatatanroperty - RtxCatatan.Text.Length)
+        If TxtCatatanLimit.Text <= 0 Then
+            MessageBox.Show("Max Length")
+        End If
+    End Sub
+
+    Private Sub RtxCatatan_KeyPress(sender As Object, e As KeyPressEventArgs) Handles RtxCatatan.KeyPress
+        If RtxCatatan.Text.Length >= JenisBarang.ClassJenisBarang.maxCatatanroperty Then
+            If e.KeyChar <> ControlChars.Back Then
+                e.Handled = True
+                MessageBox.Show("Max Length")
+            End If
+        End If
+    End Sub
+
+    Private Sub EditJenisBarang_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        TxtCatatanLimit.Text = (JenisBarang.ClassJenisBarang.maxCatatanroperty - RtxCatatan.Text.Length)
+    End Sub
 End Class

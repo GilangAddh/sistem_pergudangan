@@ -2,6 +2,8 @@
     Public Shared ClassJenisBarang As ClassJenisBarang
     Public Shared SelectedTableKoleksi
     Public Shared SelectedTableKoleksiJenis
+    'Public Shared SelectedTableKoleksiSatuan
+    'Public Shared SelectedTableKoleksiCatatan
     Dim data_kategori As List(Of String)
 
 
@@ -62,11 +64,7 @@
 
     End Sub
 
-    Private Sub BtnHapusJenis_Click(sender As Object, e As EventArgs) Handles BtnHapusJenis.Click
-        Dim HapusJenisBarang As New HapusJenisBarang
-        HapusJenisBarang.Show()
-        'Me.Hide()
-    End Sub
+
 
     Private Sub DataGridJenisBarang_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridJenisBarang.CellClick
         'Selectedtablekolesi = DataGridJenisBarang.CurrentRow.Index
@@ -78,5 +76,20 @@
         SelectedTableKoleksiJenis = SelectedRow.Cells(1).Value
 
 
+    End Sub
+    Private Sub BtnHapusJenis_Click(sender As Object, e As EventArgs) Handles BtnHapusJenis.Click
+        Dim HapusJenisBarang As New HapusJenisBarang
+        HapusJenisBarang.Show()
+    End Sub
+
+    Private Sub BtnShow_Click(sender As Object, e As EventArgs) Handles BtnShow.Click
+        Dim SelectedKoleksi As List(Of String) = ClassJenisBarang.GetDataKoleksiByIDDatabase(SelectedTableKoleksi)
+
+        ClassJenisBarang.jenisBarangProperty = SelectedKoleksi(1)
+        ClassJenisBarang.satuanProperty = SelectedKoleksi(2)
+        ClassJenisBarang.catatanProperty = SelectedKoleksi(3)
+
+        Dim InfoJenisBarang As New InfoJenisBarang
+        InfoJenisBarang.Show()
     End Sub
 End Class

@@ -49,7 +49,7 @@ Partial Class EditJenisBarang
         Me.TxtCatatanLimit.Location = New System.Drawing.Point(298, 205)
         Me.TxtCatatanLimit.Name = "TxtCatatanLimit"
         Me.TxtCatatanLimit.ReadOnly = True
-        Me.TxtCatatanLimit.Size = New System.Drawing.Size(25, 25)
+        Me.TxtCatatanLimit.Size = New System.Drawing.Size(29, 25)
         Me.TxtCatatanLimit.TabIndex = 17
         Me.TxtCatatanLimit.Text = "100"
         Me.TxtCatatanLimit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center

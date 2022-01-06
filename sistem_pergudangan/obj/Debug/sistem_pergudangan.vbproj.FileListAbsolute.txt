@@ -122,3 +122,4 @@ C:\Users\G\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_p
 C:\Users\G\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.xml
 C:\Users\G\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.pdb
 C:\Users\G\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.InfoJenisBarang.resources
+C:\Users\G\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.HapusJenisBarang.resources

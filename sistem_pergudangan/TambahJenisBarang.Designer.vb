@@ -33,6 +33,7 @@ Partial Class TambahJenisBarang
         Me.BtnTambahCatatan = New System.Windows.Forms.Button()
         Me.BtnTambahJenisBarang = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.BtnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'LblTitle
@@ -138,11 +139,22 @@ Partial Class TambahJenisBarang
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'BtnClear
+        '
+        Me.BtnClear.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnClear.Location = New System.Drawing.Point(176, 314)
+        Me.BtnClear.Name = "BtnClear"
+        Me.BtnClear.Size = New System.Drawing.Size(80, 25)
+        Me.BtnClear.TabIndex = 10
+        Me.BtnClear.Text = "Clear"
+        Me.BtnClear.UseVisualStyleBackColor = True
+        '
         'TambahJenisBarang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(354, 351)
+        Me.Controls.Add(Me.BtnClear)
         Me.Controls.Add(Me.BtnTambahJenisBarang)
         Me.Controls.Add(Me.BtnTambahCatatan)
         Me.Controls.Add(Me.TxtCatatanLimit)
@@ -154,7 +166,7 @@ Partial Class TambahJenisBarang
         Me.Controls.Add(Me.LblJenisBarang)
         Me.Controls.Add(Me.LblTitle)
         Me.Name = "TambahJenisBarang"
-        Me.Text = "`"
+        Me.Text = "Tambah Jenis Barang"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -171,4 +183,5 @@ Partial Class TambahJenisBarang
     Friend WithEvents BtnTambahCatatan As Button
     Friend WithEvents BtnTambahJenisBarang As Button
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents BtnClear As Button
 End Class

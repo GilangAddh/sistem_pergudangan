@@ -213,6 +213,9 @@
     <EmbeddedResource Include="EditJenisBarang.resx">
       <DependentUpon>EditJenisBarang.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HapusJenisBarang.resx">
+      <DependentUpon>HapusJenisBarang.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InfoJenisBarang.resx">
       <DependentUpon>InfoJenisBarang.vb</DependentUpon>
     </EmbeddedResource>

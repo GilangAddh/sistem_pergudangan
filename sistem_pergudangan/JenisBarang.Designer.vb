@@ -27,22 +27,26 @@ Partial Class JenisBarang
         Me.BtnTambahJenis = New System.Windows.Forms.Button()
         Me.BtnEditJenis = New System.Windows.Forms.Button()
         Me.BtnHapusJenis = New System.Windows.Forms.Button()
+        Me.BtnShow = New System.Windows.Forms.Button()
         CType(Me.DataGridJenisBarang, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridJenisBarang
         '
+        Me.DataGridJenisBarang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
+        Me.DataGridJenisBarang.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.DataGridJenisBarang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridJenisBarang.Location = New System.Drawing.Point(12, 76)
         Me.DataGridJenisBarang.Name = "DataGridJenisBarang"
-        Me.DataGridJenisBarang.Size = New System.Drawing.Size(418, 263)
+        Me.DataGridJenisBarang.RowHeadersWidth = 60
+        Me.DataGridJenisBarang.Size = New System.Drawing.Size(567, 263)
         Me.DataGridJenisBarang.TabIndex = 0
         '
         'LblTitle
         '
         Me.LblTitle.AutoSize = True
         Me.LblTitle.Font = New System.Drawing.Font("News706 BT", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblTitle.Location = New System.Drawing.Point(244, 22)
+        Me.LblTitle.Location = New System.Drawing.Point(131, 23)
         Me.LblTitle.Name = "LblTitle"
         Me.LblTitle.Size = New System.Drawing.Size(371, 32)
         Me.LblTitle.TabIndex = 1
@@ -53,7 +57,7 @@ Partial Class JenisBarang
         Me.BtnTambahJenis.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnTambahJenis.Location = New System.Drawing.Point(12, 345)
         Me.BtnTambahJenis.Name = "BtnTambahJenis"
-        Me.BtnTambahJenis.Size = New System.Drawing.Size(96, 23)
+        Me.BtnTambahJenis.Size = New System.Drawing.Size(100, 23)
         Me.BtnTambahJenis.TabIndex = 2
         Me.BtnTambahJenis.Text = "Tambah"
         Me.BtnTambahJenis.UseVisualStyleBackColor = True
@@ -61,9 +65,9 @@ Partial Class JenisBarang
         'BtnEditJenis
         '
         Me.BtnEditJenis.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEditJenis.Location = New System.Drawing.Point(173, 345)
+        Me.BtnEditJenis.Location = New System.Drawing.Point(171, 345)
         Me.BtnEditJenis.Name = "BtnEditJenis"
-        Me.BtnEditJenis.Size = New System.Drawing.Size(96, 23)
+        Me.BtnEditJenis.Size = New System.Drawing.Size(100, 23)
         Me.BtnEditJenis.TabIndex = 3
         Me.BtnEditJenis.Text = "Edit"
         Me.BtnEditJenis.UseVisualStyleBackColor = True
@@ -71,18 +75,29 @@ Partial Class JenisBarang
         'BtnHapusJenis
         '
         Me.BtnHapusJenis.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnHapusJenis.Location = New System.Drawing.Point(334, 345)
+        Me.BtnHapusJenis.Location = New System.Drawing.Point(325, 345)
         Me.BtnHapusJenis.Name = "BtnHapusJenis"
-        Me.BtnHapusJenis.Size = New System.Drawing.Size(96, 23)
+        Me.BtnHapusJenis.Size = New System.Drawing.Size(100, 23)
         Me.BtnHapusJenis.TabIndex = 4
         Me.BtnHapusJenis.Text = "Hapus"
         Me.BtnHapusJenis.UseVisualStyleBackColor = True
+        '
+        'BtnShow
+        '
+        Me.BtnShow.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnShow.Location = New System.Drawing.Point(479, 345)
+        Me.BtnShow.Name = "BtnShow"
+        Me.BtnShow.Size = New System.Drawing.Size(100, 23)
+        Me.BtnShow.TabIndex = 5
+        Me.BtnShow.Text = "Show Info"
+        Me.BtnShow.UseVisualStyleBackColor = True
         '
         'JenisBarang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 375)
+        Me.ClientSize = New System.Drawing.Size(592, 375)
+        Me.Controls.Add(Me.BtnShow)
         Me.Controls.Add(Me.BtnHapusJenis)
         Me.Controls.Add(Me.BtnEditJenis)
         Me.Controls.Add(Me.BtnTambahJenis)
@@ -101,4 +116,5 @@ Partial Class JenisBarang
     Friend WithEvents BtnTambahJenis As Button
     Friend WithEvents BtnEditJenis As Button
     Friend WithEvents BtnHapusJenis As Button
+    Friend WithEvents BtnShow As Button
 End Class

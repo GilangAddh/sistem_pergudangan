@@ -41,7 +41,7 @@ Public Class TambahJenisBarang
     Private Sub RtxInputCatatan_TextChanged(sender As Object, e As EventArgs) Handles RtxInputCatatan.TextChanged
         TxtCatatanLimit.Text = (JenisBarang.ClassJenisBarang.maxCatatanroperty - RtxInputCatatan.Text.Length)
         If TxtCatatanLimit.Text <= 0 Then
-            MessageBox.Show("Max Limit!!!")
+            MessageBox.Show("Max Length")
 
         End If
 
@@ -65,5 +65,9 @@ Public Class TambahJenisBarang
 
     End Sub
 
-
+    Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles BtnClear.Click
+        TxtInputJenisBarang.Text = Nothing
+        TxtInputSatuan.Text = Nothing
+        RtxInputCatatan.Text = Nothing
+    End Sub
 End Class

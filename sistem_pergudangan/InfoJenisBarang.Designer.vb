@@ -28,8 +28,8 @@ Partial Class InfoJenisBarang
         Me.LblTitle = New System.Windows.Forms.Label()
         Me.LblOutputJenisBarang = New System.Windows.Forms.Label()
         Me.BtnTutup = New System.Windows.Forms.Button()
-        Me.LblOutputCatatan = New System.Windows.Forms.Label()
         Me.LblOutputSatuan = New System.Windows.Forms.Label()
+        Me.RtxOutputCatatan = New System.Windows.Forms.RichTextBox()
         Me.SuspendLayout()
         '
         'LblCatatan
@@ -91,15 +91,6 @@ Partial Class InfoJenisBarang
         Me.BtnTutup.Text = "Tutup"
         Me.BtnTutup.UseVisualStyleBackColor = True
         '
-        'LblOutputCatatan
-        '
-        Me.LblOutputCatatan.AutoSize = True
-        Me.LblOutputCatatan.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblOutputCatatan.Location = New System.Drawing.Point(152, 134)
-        Me.LblOutputCatatan.Name = "LblOutputCatatan"
-        Me.LblOutputCatatan.Size = New System.Drawing.Size(0, 17)
-        Me.LblOutputCatatan.TabIndex = 22
-        '
         'LblOutputSatuan
         '
         Me.LblOutputSatuan.AutoSize = True
@@ -109,13 +100,22 @@ Partial Class InfoJenisBarang
         Me.LblOutputSatuan.Size = New System.Drawing.Size(0, 17)
         Me.LblOutputSatuan.TabIndex = 23
         '
+        'RtxOutputCatatan
+        '
+        Me.RtxOutputCatatan.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RtxOutputCatatan.Location = New System.Drawing.Point(155, 134)
+        Me.RtxOutputCatatan.Name = "RtxOutputCatatan"
+        Me.RtxOutputCatatan.Size = New System.Drawing.Size(118, 102)
+        Me.RtxOutputCatatan.TabIndex = 24
+        Me.RtxOutputCatatan.Text = ""
+        '
         'InfoJenisBarang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(354, 351)
+        Me.Controls.Add(Me.RtxOutputCatatan)
         Me.Controls.Add(Me.LblOutputSatuan)
-        Me.Controls.Add(Me.LblOutputCatatan)
         Me.Controls.Add(Me.BtnTutup)
         Me.Controls.Add(Me.LblOutputJenisBarang)
         Me.Controls.Add(Me.LblCatatan)
@@ -135,6 +135,6 @@ Partial Class InfoJenisBarang
     Friend WithEvents LblTitle As Label
     Friend WithEvents LblOutputJenisBarang As Label
     Friend WithEvents BtnTutup As Button
-    Friend WithEvents LblOutputCatatan As Label
     Friend WithEvents LblOutputSatuan As Label
+    Friend WithEvents RtxOutputCatatan As RichTextBox
 End Class
