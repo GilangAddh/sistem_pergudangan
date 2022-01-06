@@ -176,7 +176,7 @@ Public Class ClassJenisBarang
         Try
             dbConn.Open()
             sqlCommand.Connection = dbConn
-            sqlQuery = "UPDATE jenis_barang SET" &
+            sqlQuery = "UPDATE jenis_barang SET " &
                        "jenis_barang='" & jenis_barang & "', " &
                        "satuan='" & satuann & "', " &
                        "catatan='" & catatann & "' " &
@@ -190,7 +190,7 @@ Public Class ClassJenisBarang
             dbConn.Close()
 
         Catch ex As Exception
-            Return ex.Message
+            MessageBox.Show(ex.Message.ToString())
         Finally
             dbConn.Dispose()
         End Try
