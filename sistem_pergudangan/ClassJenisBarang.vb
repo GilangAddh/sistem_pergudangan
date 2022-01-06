@@ -168,19 +168,24 @@ Public Class ClassJenisBarang
 
     Public Function UpdateDataKoleksiByIDDatabase(ID As Integer,
                                                   jenis_barang As String,
-                                                  satuan As String,
-                                                  catatan As String)
+                                                  satuann As String,
+                                                  catatann As String)
 
         dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" + "password =" + password + ";" + "database =" + database
 
         Try
             dbConn.Open()
             sqlCommand.Connection = dbConn
-            sqlQuery = "UPDATE jenis_barang  SET " &
-                       "jenis_barang='" & jenis_barang & "'," &
-                       "satuan='" & satuan & "'," &
-                       "catatan='" & catatan & "'," &
+            sqlQuery = "UPDATE jenis_barang SET" &
+                       "jenis_barang='" & jenis_barang & "', " &
+                       "satuan='" & satuann & "', " &
+                       "catatan='" & catatann & "' " &
                        "WHERE id_jenis_barang='" & ID & "'"
+
+            sqlCommand = New MySqlCommand(sqlQuery, dbConn)
+            sqlRead = sqlCommand.ExecuteReader
+
+            dbConn.Close()
             sqlRead.Close()
             dbConn.Close()
 

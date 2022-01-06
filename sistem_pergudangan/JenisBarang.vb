@@ -2,6 +2,7 @@
     Public Shared ClassJenisBarang As ClassJenisBarang
     Public Shared SelectedTableKoleksi
     Public Shared SelectedTableKoleksiJenis
+    Dim data_kategori As List(Of String)
 
 
     Public Sub New()
@@ -24,32 +25,23 @@
     Private Sub ReloadDataTableKoleksi()
         DataGridJenisBarang.DataSource = ClassJenisBarang.GetDataKoleksiDatabase()
 
-        For Each rowKoleksi In ClassJenisBarang.GetKoleksiDataTable()
-            Dim dataTable As String() = {rowKoleksi(1),
-                rowKoleksi(2),
-                rowKoleksi(3),
-                rowKoleksi(4)}
-
-            DataGridJenisBarang.Rows.Add(dataTable)
-        Next
-
     End Sub
 
-    Public Sub UpdateDataTableArrayList()
-        'DataGridJenisBarang.Rows.Clear()
+    'Public Sub UpdateDataTableArrayList()
+    '    'DataGridJenisBarang.Rows.Clear()
 
-        'For Each rowKoleksi In ClassJenisBarang.GetKoleksiDataTable()
-        '    Dim dataTable As String() = {rowKoleksi(1),
-        '        rowKoleksi(2),
-        '        rowKoleksi(3),
-        '        rowKoleksi(4)}
+    '    'For Each rowKoleksi In ClassJenisBarang.GetKoleksiDataTable()
+    '    '    Dim dataTable As String() = {rowKoleksi(1),
+    '    '        rowKoleksi(2),
+    '    '        rowKoleksi(3),
+    '    '        rowKoleksi(4)}
 
-        '    DataGridJenisBarang.Rows.Add(dataTable)
-        'Next
+    '    '    DataGridJenisBarang.Rows.Add(dataTable)
+    '    'Next
 
 
 
-    End Sub
+    'End Sub
 
     Private Sub BtnTambahJenis_Click(sender As Object, e As EventArgs) Handles BtnTambahJenis.Click
         Dim TambahJenisBarang As New TambahJenisBarang
@@ -63,10 +55,6 @@
         ClassJenisBarang.jenisBarangProperty = SelectedKoleksi(1)
         ClassJenisBarang.satuanProperty = SelectedKoleksi(2)
         ClassJenisBarang.catatanProperty = SelectedKoleksi(3)
-
-        'For Each info_kategori In data_kategori
-
-        'Next
 
 
         Dim EditJenisBarang As New EditJenisBarang
