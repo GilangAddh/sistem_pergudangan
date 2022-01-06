@@ -180,7 +180,7 @@ Public Class ClassJenisBarang
                        "jenis_barang='" & jenis_barang & "'," &
                        "satuan='" & satuan & "'," &
                        "catatan='" & catatan & "'," &
-                       "WHERE id_koleksi='" & ID & "'"
+                       "WHERE id_jenis_barang='" & ID & "'"
             sqlRead.Close()
             dbConn.Close()
 

@@ -1,7 +1,7 @@
 ﻿Public Class JenisBarang
     Public Shared ClassJenisBarang As ClassJenisBarang
-    Public SelectedTableKoleksi
-    Public SelectedTableKoleksiJenis
+    Public Shared SelectedTableKoleksi
+    Public Shared SelectedTableKoleksiJenis
 
 
     Public Sub New()
@@ -11,22 +11,18 @@
 
         ' Add any initialization after the InitializeComponent() call.
         ClassJenisBarang = New ClassJenisBarang
-        UpdateDataTableArrayList()
+        'UpdateDataTableArrayList()
         ReloadDataTableKoleksi()
 
     End Sub
 
     Private Sub JenisBarang_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-        UpdateDataTableArrayList()
+        'UpdateDataTableArrayList()
         ReloadDataTableKoleksi()
     End Sub
 
     Private Sub ReloadDataTableKoleksi()
         DataGridJenisBarang.DataSource = ClassJenisBarang.GetDataKoleksiDatabase()
-    End Sub
-
-    Public Sub UpdateDataTableArrayList()
-        'DataGridJenisBarang.Rows.Clear()
 
         For Each rowKoleksi In ClassJenisBarang.GetKoleksiDataTable()
             Dim dataTable As String() = {rowKoleksi(1),
@@ -36,6 +32,21 @@
 
             DataGridJenisBarang.Rows.Add(dataTable)
         Next
+
+    End Sub
+
+    Public Sub UpdateDataTableArrayList()
+        'DataGridJenisBarang.Rows.Clear()
+
+        'For Each rowKoleksi In ClassJenisBarang.GetKoleksiDataTable()
+        '    Dim dataTable As String() = {rowKoleksi(1),
+        '        rowKoleksi(2),
+        '        rowKoleksi(3),
+        '        rowKoleksi(4)}
+
+        '    DataGridJenisBarang.Rows.Add(dataTable)
+        'Next
+
 
 
     End Sub
