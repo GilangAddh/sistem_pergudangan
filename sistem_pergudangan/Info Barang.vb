@@ -11,12 +11,15 @@
             PictureBoxGambar.SizeMode = PictureBoxSizeMode.StretchImage
         End If
 
+        Dim convertTanggal As Date = Form_Barang.barang.TanggalMasukBarangProperty
+        Dim convertTanggalPembaruan As Date = Form_Barang.barang.TerakhirPembaharuanProperty
+
         LblNamaBarang.Text = Form_Barang.barang.NamaBarangProperty
         LblJenis.Text = Form_Barang.barang.JenisBarangProperty
         LblDeskripsi.Text = Form_Barang.barang.DeskripsiProperty
         LblTahun.Text = Form_Barang.barang.TahunPembuatanProperty
-        LblTanggal.Text = Form_Barang.barang.TanggalMasukBarangProperty
-        LblPerubahan.Text = Form_Barang.barang.TerakhirPembaharuanProperty
+        LblTanggal.Text = convertTanggal.ToString("dd MMMM yyyy")
+        LblPerubahan.Text = convertTanggalPembaruan.ToString("dd MMMM yyyy")
         LblLokasi.Text = Form_Barang.barang.LokasiPenyimpananProperty
         LblStock.Text = Form_Barang.barang.StockBarangProperty
         LblKualitas.Text = Form_Barang.barang.KualitasProperty
