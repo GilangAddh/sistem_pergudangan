@@ -225,7 +225,7 @@ Partial Class Form_Barang
         '
         Me.PnlLogo.BackgroundImage = Global.sistem_pergudangan.My.Resources.Resources.Adidas
         Me.PnlLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PnlLogo.Location = New System.Drawing.Point(546, 52)
+        Me.PnlLogo.Location = New System.Drawing.Point(477, 52)
         Me.PnlLogo.Name = "PnlLogo"
         Me.PnlLogo.Size = New System.Drawing.Size(125, 66)
         Me.PnlLogo.TabIndex = 40
@@ -251,7 +251,7 @@ Partial Class Form_Barang
         'LblPerubahan
         '
         Me.LblPerubahan.AutoSize = True
-        Me.LblPerubahan.Location = New System.Drawing.Point(975, 403)
+        Me.LblPerubahan.Location = New System.Drawing.Point(962, 403)
         Me.LblPerubahan.Name = "LblPerubahan"
         Me.LblPerubahan.Size = New System.Drawing.Size(0, 13)
         Me.LblPerubahan.TabIndex = 100
@@ -259,7 +259,7 @@ Partial Class Form_Barang
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(866, 403)
+        Me.Label7.Location = New System.Drawing.Point(853, 403)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(104, 13)
         Me.Label7.TabIndex = 99
@@ -268,7 +268,7 @@ Partial Class Form_Barang
         'ListBoxTargetPasar
         '
         Me.ListBoxTargetPasar.FormattingEnabled = True
-        Me.ListBoxTargetPasar.Location = New System.Drawing.Point(868, 550)
+        Me.ListBoxTargetPasar.Location = New System.Drawing.Point(855, 550)
         Me.ListBoxTargetPasar.Name = "ListBoxTargetPasar"
         Me.ListBoxTargetPasar.Size = New System.Drawing.Size(277, 56)
         Me.ListBoxTargetPasar.TabIndex = 98
@@ -276,7 +276,7 @@ Partial Class Form_Barang
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(865, 526)
+        Me.Label1.Location = New System.Drawing.Point(852, 526)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(71, 13)
         Me.Label1.TabIndex = 97
@@ -285,7 +285,7 @@ Partial Class Form_Barang
         'LblKualitas
         '
         Me.LblKualitas.AutoSize = True
-        Me.LblKualitas.Location = New System.Drawing.Point(975, 494)
+        Me.LblKualitas.Location = New System.Drawing.Point(962, 494)
         Me.LblKualitas.Name = "LblKualitas"
         Me.LblKualitas.Size = New System.Drawing.Size(0, 13)
         Me.LblKualitas.TabIndex = 96
@@ -293,7 +293,7 @@ Partial Class Form_Barang
         'LblCaptKualitas
         '
         Me.LblCaptKualitas.AutoSize = True
-        Me.LblCaptKualitas.Location = New System.Drawing.Point(865, 494)
+        Me.LblCaptKualitas.Location = New System.Drawing.Point(852, 494)
         Me.LblCaptKualitas.Name = "LblCaptKualitas"
         Me.LblCaptKualitas.Size = New System.Drawing.Size(47, 13)
         Me.LblCaptKualitas.TabIndex = 95
@@ -302,7 +302,7 @@ Partial Class Form_Barang
         'LblLokasi
         '
         Me.LblLokasi.AutoSize = True
-        Me.LblLokasi.Location = New System.Drawing.Point(975, 434)
+        Me.LblLokasi.Location = New System.Drawing.Point(962, 434)
         Me.LblLokasi.Name = "LblLokasi"
         Me.LblLokasi.Size = New System.Drawing.Size(0, 13)
         Me.LblLokasi.TabIndex = 94
@@ -310,7 +310,7 @@ Partial Class Form_Barang
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(865, 434)
+        Me.Label5.Location = New System.Drawing.Point(852, 434)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(108, 13)
         Me.Label5.TabIndex = 93
@@ -319,7 +319,7 @@ Partial Class Form_Barang
         'LblTanggal
         '
         Me.LblTanggal.AutoSize = True
-        Me.LblTanggal.Location = New System.Drawing.Point(975, 369)
+        Me.LblTanggal.Location = New System.Drawing.Point(962, 369)
         Me.LblTanggal.Name = "LblTanggal"
         Me.LblTanggal.Size = New System.Drawing.Size(0, 13)
         Me.LblTanggal.TabIndex = 92
@@ -327,7 +327,7 @@ Partial Class Form_Barang
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(865, 369)
+        Me.Label4.Location = New System.Drawing.Point(852, 369)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(84, 13)
         Me.Label4.TabIndex = 91
@@ -336,7 +336,7 @@ Partial Class Form_Barang
         'LblTahun
         '
         Me.LblTahun.AutoSize = True
-        Me.LblTahun.Location = New System.Drawing.Point(975, 332)
+        Me.LblTahun.Location = New System.Drawing.Point(962, 332)
         Me.LblTahun.Name = "LblTahun"
         Me.LblTahun.Size = New System.Drawing.Size(0, 13)
         Me.LblTahun.TabIndex = 90
@@ -344,7 +344,7 @@ Partial Class Form_Barang
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(865, 332)
+        Me.Label3.Location = New System.Drawing.Point(852, 332)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(98, 13)
         Me.Label3.TabIndex = 89
@@ -353,7 +353,7 @@ Partial Class Form_Barang
         'LblDeskripsi
         '
         Me.LblDeskripsi.AutoSize = True
-        Me.LblDeskripsi.Location = New System.Drawing.Point(975, 285)
+        Me.LblDeskripsi.Location = New System.Drawing.Point(962, 285)
         Me.LblDeskripsi.Name = "LblDeskripsi"
         Me.LblDeskripsi.Size = New System.Drawing.Size(0, 13)
         Me.LblDeskripsi.TabIndex = 88
@@ -361,7 +361,7 @@ Partial Class Form_Barang
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(865, 285)
+        Me.Label2.Location = New System.Drawing.Point(852, 285)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(53, 13)
         Me.Label2.TabIndex = 87
@@ -369,7 +369,7 @@ Partial Class Form_Barang
         '
         'PictureBoxGambar
         '
-        Me.PictureBoxGambar.Location = New System.Drawing.Point(978, 78)
+        Me.PictureBoxGambar.Location = New System.Drawing.Point(965, 78)
         Me.PictureBoxGambar.Name = "PictureBoxGambar"
         Me.PictureBoxGambar.Size = New System.Drawing.Size(96, 120)
         Me.PictureBoxGambar.TabIndex = 86
@@ -378,7 +378,7 @@ Partial Class Form_Barang
         'LblStock
         '
         Me.LblStock.AutoSize = True
-        Me.LblStock.Location = New System.Drawing.Point(975, 466)
+        Me.LblStock.Location = New System.Drawing.Point(962, 466)
         Me.LblStock.Name = "LblStock"
         Me.LblStock.Size = New System.Drawing.Size(0, 13)
         Me.LblStock.TabIndex = 85
@@ -386,7 +386,7 @@ Partial Class Form_Barang
         'LblNamaBarang
         '
         Me.LblNamaBarang.AutoSize = True
-        Me.LblNamaBarang.Location = New System.Drawing.Point(975, 221)
+        Me.LblNamaBarang.Location = New System.Drawing.Point(962, 221)
         Me.LblNamaBarang.Name = "LblNamaBarang"
         Me.LblNamaBarang.Size = New System.Drawing.Size(0, 13)
         Me.LblNamaBarang.TabIndex = 84
@@ -394,7 +394,7 @@ Partial Class Form_Barang
         'LblJenis
         '
         Me.LblJenis.AutoSize = True
-        Me.LblJenis.Location = New System.Drawing.Point(975, 254)
+        Me.LblJenis.Location = New System.Drawing.Point(962, 254)
         Me.LblJenis.Name = "LblJenis"
         Me.LblJenis.Size = New System.Drawing.Size(0, 13)
         Me.LblJenis.TabIndex = 83
@@ -402,7 +402,7 @@ Partial Class Form_Barang
         'LblNamaBarangInfo
         '
         Me.LblNamaBarangInfo.AutoSize = True
-        Me.LblNamaBarangInfo.Location = New System.Drawing.Point(865, 221)
+        Me.LblNamaBarangInfo.Location = New System.Drawing.Point(852, 221)
         Me.LblNamaBarangInfo.Name = "LblNamaBarangInfo"
         Me.LblNamaBarangInfo.Size = New System.Drawing.Size(75, 13)
         Me.LblNamaBarangInfo.TabIndex = 82
@@ -411,7 +411,7 @@ Partial Class Form_Barang
         'LblIDJenisInfo
         '
         Me.LblIDJenisInfo.AutoSize = True
-        Me.LblIDJenisInfo.Location = New System.Drawing.Point(865, 254)
+        Me.LblIDJenisInfo.Location = New System.Drawing.Point(852, 254)
         Me.LblIDJenisInfo.Name = "LblIDJenisInfo"
         Me.LblIDJenisInfo.Size = New System.Drawing.Size(71, 13)
         Me.LblIDJenisInfo.TabIndex = 81
@@ -420,7 +420,7 @@ Partial Class Form_Barang
         'LblStockInfo
         '
         Me.LblStockInfo.AutoSize = True
-        Me.LblStockInfo.Location = New System.Drawing.Point(865, 466)
+        Me.LblStockInfo.Location = New System.Drawing.Point(852, 466)
         Me.LblStockInfo.Name = "LblStockInfo"
         Me.LblStockInfo.Size = New System.Drawing.Size(38, 13)
         Me.LblStockInfo.TabIndex = 80
