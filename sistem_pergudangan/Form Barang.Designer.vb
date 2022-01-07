@@ -107,19 +107,19 @@ Partial Class Form_Barang
         'ToolStripMenuJenis
         '
         Me.ToolStripMenuJenis.Name = "ToolStripMenuJenis"
-        Me.ToolStripMenuJenis.Size = New System.Drawing.Size(149, 22)
+        Me.ToolStripMenuJenis.Size = New System.Drawing.Size(180, 22)
         Me.ToolStripMenuJenis.Text = "Jenis Barang"
         '
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(149, 22)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(180, 22)
         Me.ToolStripMenuItem3.Text = "Order Barang"
         '
         'ToolStripMenuMasukBarang
         '
         Me.ToolStripMenuMasukBarang.Name = "ToolStripMenuMasukBarang"
-        Me.ToolStripMenuMasukBarang.Size = New System.Drawing.Size(149, 22)
+        Me.ToolStripMenuMasukBarang.Size = New System.Drawing.Size(180, 22)
         Me.ToolStripMenuMasukBarang.Text = "Masuk Barang"
         '
         'LblCaptKapasitas

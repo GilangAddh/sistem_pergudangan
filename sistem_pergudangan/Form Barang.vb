@@ -223,4 +223,11 @@
 
         ListBoxTargetPasar.Items.Clear()
     End Sub
+
+    Private Sub ToolStripMenuJenis_Click(sender As Object, e As EventArgs) Handles ToolStripMenuJenis.Click
+        MessageBox.Show("Anda mengakses Jenis Barang")
+        Dim jenisBarang = New JenisBarang()
+        jenisBarang.Show()
+        Me.Close()
+    End Sub
 End Class

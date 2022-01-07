@@ -133,3 +133,15 @@ C:\Users\G\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_p
 C:\Users\G\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.InfoJenisBarang.resources
 C:\Users\G\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.HapusJenisBarang.resources
 >>>>>>> origin/gilangadhi
+C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Add_Barang.resources
+C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Akses_Barang.resources
+C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Edit_Barang.resources
+C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Edit_Stock.resources
+C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.EditJenisBarang.resources
+C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Form_Barang.resources
+C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Hapus_Barang.resources
+C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.HapusJenisBarang.resources
+C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Info_Barang.resources
+C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.InfoJenisBarang.resources
+C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.JenisBarang.resources
+C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.TambahJenisBarang.resources

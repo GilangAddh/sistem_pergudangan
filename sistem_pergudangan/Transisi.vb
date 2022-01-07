@@ -12,4 +12,11 @@
         formBarang.Show()
         Me.Close()
     End Sub
+
+    Private Sub BtnAksesJenisBarang_Click(sender As Object, e As EventArgs) Handles BtnAksesJenisBarang.Click
+        MessageBox.Show("Anda Mengakses Jenis Barang")
+        Dim jenisBarang = New JenisBarang()
+        jenisBarang.Show()
+        Me.Close()
+    End Sub
 End Class

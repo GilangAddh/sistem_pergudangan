@@ -101,9 +101,9 @@ Partial Class Add_Barang
         '
         'BtnTambahBarang
         '
-        Me.BtnTambahBarang.Location = New System.Drawing.Point(331, 586)
+        Me.BtnTambahBarang.Location = New System.Drawing.Point(302, 586)
         Me.BtnTambahBarang.Name = "BtnTambahBarang"
-        Me.BtnTambahBarang.Size = New System.Drawing.Size(92, 23)
+        Me.BtnTambahBarang.Size = New System.Drawing.Size(121, 23)
         Me.BtnTambahBarang.TabIndex = 49
         Me.BtnTambahBarang.Text = "Tambah Barang"
         Me.BtnTambahBarang.UseVisualStyleBackColor = True
@@ -128,17 +128,17 @@ Partial Class Add_Barang
         '
         'PictureBoxGambarBarang
         '
-        Me.PictureBoxGambarBarang.Location = New System.Drawing.Point(15, 71)
+        Me.PictureBoxGambarBarang.Location = New System.Drawing.Point(12, 71)
         Me.PictureBoxGambarBarang.Name = "PictureBoxGambarBarang"
-        Me.PictureBoxGambarBarang.Size = New System.Drawing.Size(96, 112)
+        Me.PictureBoxGambarBarang.Size = New System.Drawing.Size(107, 124)
         Me.PictureBoxGambarBarang.TabIndex = 57
         Me.PictureBoxGambarBarang.TabStop = False
         '
         'BtnTambahGambar
         '
-        Me.BtnTambahGambar.Location = New System.Drawing.Point(15, 189)
+        Me.BtnTambahGambar.Location = New System.Drawing.Point(12, 201)
         Me.BtnTambahGambar.Name = "BtnTambahGambar"
-        Me.BtnTambahGambar.Size = New System.Drawing.Size(96, 23)
+        Me.BtnTambahGambar.Size = New System.Drawing.Size(107, 23)
         Me.BtnTambahGambar.TabIndex = 58
         Me.BtnTambahGambar.Text = "Tambah Gambar"
         Me.BtnTambahGambar.UseVisualStyleBackColor = True

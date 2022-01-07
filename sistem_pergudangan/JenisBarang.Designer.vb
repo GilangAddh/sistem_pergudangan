@@ -28,7 +28,16 @@ Partial Class JenisBarang
         Me.BtnEditJenis = New System.Windows.Forms.Button()
         Me.BtnHapusJenis = New System.Windows.Forms.Button()
         Me.BtnShow = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.ToolStripMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuData = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuMasukBarang = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         CType(Me.DataGridJenisBarang, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
+        Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'DataGridJenisBarang
@@ -36,26 +45,26 @@ Partial Class JenisBarang
         Me.DataGridJenisBarang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.DataGridJenisBarang.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.DataGridJenisBarang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridJenisBarang.Location = New System.Drawing.Point(12, 76)
+        Me.DataGridJenisBarang.Location = New System.Drawing.Point(122, 100)
         Me.DataGridJenisBarang.Name = "DataGridJenisBarang"
         Me.DataGridJenisBarang.RowHeadersWidth = 60
-        Me.DataGridJenisBarang.Size = New System.Drawing.Size(567, 263)
+        Me.DataGridJenisBarang.Size = New System.Drawing.Size(322, 263)
         Me.DataGridJenisBarang.TabIndex = 0
         '
         'LblTitle
         '
         Me.LblTitle.AutoSize = True
-        Me.LblTitle.Font = New System.Drawing.Font("News706 BT", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblTitle.Location = New System.Drawing.Point(131, 23)
+        Me.LblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTitle.Location = New System.Drawing.Point(92, 49)
         Me.LblTitle.Name = "LblTitle"
-        Me.LblTitle.Size = New System.Drawing.Size(371, 32)
+        Me.LblTitle.Size = New System.Drawing.Size(391, 31)
         Me.LblTitle.TabIndex = 1
-        Me.LblTitle.Text = "Kategori Barang Gudang A"
+        Me.LblTitle.Text = "Jenis Barang Gudang Adidas"
         '
         'BtnTambahJenis
         '
         Me.BtnTambahJenis.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnTambahJenis.Location = New System.Drawing.Point(12, 345)
+        Me.BtnTambahJenis.Location = New System.Drawing.Point(13, 389)
         Me.BtnTambahJenis.Name = "BtnTambahJenis"
         Me.BtnTambahJenis.Size = New System.Drawing.Size(100, 23)
         Me.BtnTambahJenis.TabIndex = 2
@@ -65,7 +74,7 @@ Partial Class JenisBarang
         'BtnEditJenis
         '
         Me.BtnEditJenis.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnEditJenis.Location = New System.Drawing.Point(171, 345)
+        Me.BtnEditJenis.Location = New System.Drawing.Point(172, 389)
         Me.BtnEditJenis.Name = "BtnEditJenis"
         Me.BtnEditJenis.Size = New System.Drawing.Size(100, 23)
         Me.BtnEditJenis.TabIndex = 3
@@ -75,7 +84,7 @@ Partial Class JenisBarang
         'BtnHapusJenis
         '
         Me.BtnHapusJenis.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnHapusJenis.Location = New System.Drawing.Point(325, 345)
+        Me.BtnHapusJenis.Location = New System.Drawing.Point(326, 389)
         Me.BtnHapusJenis.Name = "BtnHapusJenis"
         Me.BtnHapusJenis.Size = New System.Drawing.Size(100, 23)
         Me.BtnHapusJenis.TabIndex = 4
@@ -85,18 +94,72 @@ Partial Class JenisBarang
         'BtnShow
         '
         Me.BtnShow.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnShow.Location = New System.Drawing.Point(479, 345)
+        Me.BtnShow.Location = New System.Drawing.Point(480, 389)
         Me.BtnShow.Name = "BtnShow"
         Me.BtnShow.Size = New System.Drawing.Size(100, 23)
         Me.BtnShow.TabIndex = 5
         Me.BtnShow.Text = "Show Info"
         Me.BtnShow.UseVisualStyleBackColor = True
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenu})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(592, 24)
+        Me.MenuStrip1.TabIndex = 7
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'ToolStripMenu
+        '
+        Me.ToolStripMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuData, Me.ToolStripMenuItem3, Me.ToolStripMenuMasukBarang})
+        Me.ToolStripMenu.Name = "ToolStripMenu"
+        Me.ToolStripMenu.Size = New System.Drawing.Size(53, 20)
+        Me.ToolStripMenu.Text = "Menu "
+        '
+        'ToolStripMenuData
+        '
+        Me.ToolStripMenuData.Name = "ToolStripMenuData"
+        Me.ToolStripMenuData.Size = New System.Drawing.Size(180, 22)
+        Me.ToolStripMenuData.Text = "Data Barang"
+        '
+        'ToolStripMenuItem3
+        '
+        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(180, 22)
+        Me.ToolStripMenuItem3.Text = "Order Barang"
+        '
+        'ToolStripMenuMasukBarang
+        '
+        Me.ToolStripMenuMasukBarang.Name = "ToolStripMenuMasukBarang"
+        Me.ToolStripMenuMasukBarang.Size = New System.Drawing.Size(180, 22)
+        Me.ToolStripMenuMasukBarang.Text = "Masuk Barang"
+        '
+        'ToolStrip1
+        '
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1})
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 24)
+        Me.ToolStrip1.Name = "ToolStrip1"
+        Me.ToolStrip1.Size = New System.Drawing.Size(592, 25)
+        Me.ToolStrip1.TabIndex = 8
+        Me.ToolStrip1.Text = "ToolStrip1"
+        '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton1.Image = Global.sistem_pergudangan.My.Resources.Resources.back_exit
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton1.Text = "ToolStripButton1"
+        '
         'JenisBarang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(592, 375)
+        Me.ClientSize = New System.Drawing.Size(592, 418)
+        Me.Controls.Add(Me.ToolStrip1)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.BtnShow)
         Me.Controls.Add(Me.BtnHapusJenis)
         Me.Controls.Add(Me.BtnEditJenis)
@@ -106,6 +169,10 @@ Partial Class JenisBarang
         Me.Name = "JenisBarang"
         Me.Text = "JenisBarang"
         CType(Me.DataGridJenisBarang, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
+        Me.ToolStrip1.ResumeLayout(False)
+        Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -117,4 +184,11 @@ Partial Class JenisBarang
     Friend WithEvents BtnEditJenis As Button
     Friend WithEvents BtnHapusJenis As Button
     Friend WithEvents BtnShow As Button
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents ToolStripMenu As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuData As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuMasukBarang As ToolStripMenuItem
+    Friend WithEvents ToolStrip1 As ToolStrip
+    Friend WithEvents ToolStripButton1 As ToolStripButton
 End Class

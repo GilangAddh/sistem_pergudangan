@@ -92,4 +92,18 @@
         Dim InfoJenisBarang As New InfoJenisBarang
         InfoJenisBarang.Show()
     End Sub
+
+    Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
+        MessageBox.Show("Anda sudah logout")
+        Dim login = New Login()
+        login.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub ToolStripMenuData_Click(sender As Object, e As EventArgs) Handles ToolStripMenuData.Click
+        MessageBox.Show("Anda mengakses Data Barang")
+        Dim formBarang = New Form_Barang()
+        formBarang.Show()
+        Me.Close()
+    End Sub
 End Class
