@@ -105,6 +105,7 @@
             barang.DeskripsiProperty = selectedKatalog(5)
             barang.TahunPembuatanProperty = selectedKatalog(6)
             barang.TanggalMasukBarangProperty = selectedKatalog(7)
+            barang.TerakhirPembaharuanProperty = selectedKatalog(8)
             barang.LokasiPenyimpananProperty = selectedKatalog(9)
             barang.KualitasProperty = selectedKatalog(10)
 

@@ -225,7 +225,7 @@ Partial Class Form_Barang
         '
         Me.PnlLogo.BackgroundImage = Global.sistem_pergudangan.My.Resources.Resources.Adidas
         Me.PnlLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PnlLogo.Location = New System.Drawing.Point(477, 52)
+        Me.PnlLogo.Location = New System.Drawing.Point(497, 52)
         Me.PnlLogo.Name = "PnlLogo"
         Me.PnlLogo.Size = New System.Drawing.Size(125, 66)
         Me.PnlLogo.TabIndex = 40
