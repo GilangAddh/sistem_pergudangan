@@ -11,9 +11,10 @@
     <AssemblyName>sistem_pergudangan</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -117,16 +118,35 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Barang_Masuk.Designer.vb">
+      <DependentUpon>Barang_Masuk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Barang_Masuk.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BuatAkun.Designer.vb">
       <DependentUpon>BuatAkun.vb</DependentUpon>
     </Compile>
     <Compile Include="BuatAkun.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ClassOrder.vb" />
     <Compile Include="Daftar.Designer.vb">
       <DependentUpon>Daftar.vb</DependentUpon>
     </Compile>
     <Compile Include="Daftar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data_Barang.Designer.vb">
+      <DependentUpon>Data_Barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Barang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Order.Designer.vb">
+      <DependentUpon>Form_Order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Order.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.vb">
@@ -172,11 +192,20 @@
     <Compile Include="Users.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Barang_Masuk.resx">
+      <DependentUpon>Barang_Masuk.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuatAkun.resx">
       <DependentUpon>BuatAkun.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Daftar.resx">
       <DependentUpon>Daftar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data_Barang.resx">
+      <DependentUpon>Data_Barang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Order.resx">
+      <DependentUpon>Form_Order.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
