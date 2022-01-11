@@ -22,16 +22,25 @@ Partial Class Transisi
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.PnlLogo = New System.Windows.Forms.Panel()
         Me.BtnAksesJenisBarang = New System.Windows.Forms.Button()
         Me.BtnAksesBarang = New System.Windows.Forms.Button()
         Me.BtnAksesOrder = New System.Windows.Forms.Button()
         Me.BtnMasukBarang = New System.Windows.Forms.Button()
         Me.ToolStripTransisi = New System.Windows.Forms.ToolStrip()
-        Me.LblPilih = New System.Windows.Forms.Label()
         Me.ToolStripButtonBack = New System.Windows.Forms.ToolStripButton()
-        Me.PnlLogo = New System.Windows.Forms.Panel()
+        Me.LblPilih = New System.Windows.Forms.Label()
         Me.ToolStripTransisi.SuspendLayout()
         Me.SuspendLayout()
+        '
+        'PnlLogo
+        '
+        Me.PnlLogo.BackgroundImage = Global.sistem_pergudangan.My.Resources.Resources.Adidas
+        Me.PnlLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PnlLogo.Location = New System.Drawing.Point(59, 28)
+        Me.PnlLogo.Name = "PnlLogo"
+        Me.PnlLogo.Size = New System.Drawing.Size(112, 74)
+        Me.PnlLogo.TabIndex = 39
         '
         'BtnAksesJenisBarang
         '
@@ -78,16 +87,6 @@ Partial Class Transisi
         Me.ToolStripTransisi.TabIndex = 44
         Me.ToolStripTransisi.Text = "ToolStripButtunBack"
         '
-        'LblPilih
-        '
-        Me.LblPilih.AutoSize = True
-        Me.LblPilih.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblPilih.Location = New System.Drawing.Point(12, 128)
-        Me.LblPilih.Name = "LblPilih"
-        Me.LblPilih.Size = New System.Drawing.Size(135, 13)
-        Me.LblPilih.TabIndex = 45
-        Me.LblPilih.Text = "Pilih Akses Gudang:"
-        '
         'ToolStripButtonBack
         '
         Me.ToolStripButtonBack.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -97,14 +96,15 @@ Partial Class Transisi
         Me.ToolStripButtonBack.Size = New System.Drawing.Size(23, 22)
         Me.ToolStripButtonBack.Text = "ToolStripButtonBack"
         '
-        'PnlLogo
+        'LblPilih
         '
-        Me.PnlLogo.BackgroundImage = Global.sistem_pergudangan.My.Resources.Resources.Adidas
-        Me.PnlLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PnlLogo.Location = New System.Drawing.Point(59, 28)
-        Me.PnlLogo.Name = "PnlLogo"
-        Me.PnlLogo.Size = New System.Drawing.Size(112, 74)
-        Me.PnlLogo.TabIndex = 39
+        Me.LblPilih.AutoSize = True
+        Me.LblPilih.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblPilih.Location = New System.Drawing.Point(12, 128)
+        Me.LblPilih.Name = "LblPilih"
+        Me.LblPilih.Size = New System.Drawing.Size(135, 13)
+        Me.LblPilih.TabIndex = 45
+        Me.LblPilih.Text = "Pilih Akses Gudang:"
         '
         'Transisi
         '

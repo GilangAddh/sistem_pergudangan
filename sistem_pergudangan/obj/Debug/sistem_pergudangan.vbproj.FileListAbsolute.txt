@@ -78,7 +78,6 @@ C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergu
 C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.xml
 C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.pdb
 <<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Transisi.resources
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Form_Barang.resources
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Akses_Barang.resources
@@ -146,7 +145,6 @@ C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergu
 C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.InfoJenisBarang.resources
 C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.JenisBarang.resources
 C:\Users\Bintang Fajar Julio\source\repos\GetGit\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.TambahJenisBarang.resources
-=======
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\bin\Debug\sistem_pergudangan.exe.config
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\bin\Debug\sistem_pergudangan.exe
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\bin\Debug\sistem_pergudangan.pdb
@@ -185,3 +183,11 @@ C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\ob
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.xml
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.pdb
 >>>>>>> lanangpras
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Barang_Masuk.resources
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Data_Barang.resources
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.EditJenisBarang.resources
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.HapusJenisBarang.resources
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.InfoJenisBarang.resources
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.JenisBarang.resources
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Form_Order.resources
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.TambahJenisBarang.resources
