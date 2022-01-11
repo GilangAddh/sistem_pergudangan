@@ -134,22 +134,15 @@
     <Compile Include="BuatAkun.Designer.vb">
       <DependentUpon>BuatAkun.vb</DependentUpon>
     </Compile>
-    <Compile Include="Barang_Masuk.Designer.vb">
-      <DependentUpon>Barang_Masuk.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Barang_Masuk.vb" />
     <Compile Include="BuatAkun.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClassJenisBarang.vb" />
     <Compile Include="Daftar.Designer.vb">
       <DependentUpon>Daftar.vb</DependentUpon>
     </Compile>
-    <Compile Include="ClassOrder.vb" />
-    <Compile Include="Data_Barang.Designer.vb">
-      <DependentUpon>Data_Barang.vb</DependentUpon>
+    <Compile Include="Daftar.vb">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Data_Barang.vb" />
     <Compile Include="Edit Barang.Designer.vb">
       <DependentUpon>Edit Barang.vb</DependentUpon>
     </Compile>
@@ -162,10 +155,6 @@
     <Compile Include="Edit Stock.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditJenisBarang.Designer.vb">
-      <DependentUpon>EditJenisBarang.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EditJenisBarang.vb" />
     <Compile Include="Form Barang.Designer.vb">
       <DependentUpon>Form Barang.vb</DependentUpon>
     </Compile>
@@ -178,31 +167,18 @@
     <Compile Include="Hapus Barang.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HapusJenisBarang.Designer.vb">
-      <DependentUpon>HapusJenisBarang.vb</DependentUpon>
-    </Compile>
-    <Compile Include="HapusJenisBarang.vb" />
     <Compile Include="Info Barang.Designer.vb">
       <DependentUpon>Info Barang.vb</DependentUpon>
     </Compile>
     <Compile Include="Info Barang.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InfoJenisBarang.Designer.vb">
-      <DependentUpon>InfoJenisBarang.vb</DependentUpon>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
     </Compile>
-    <Compile Include="InfoJenisBarang.vb" />
-    <Compile Include="JenisBarang.Designer.vb">
-      <DependentUpon>JenisBarang.vb</DependentUpon>
-    </Compile>
-    <Compile Include="JenisBarang.vb" />
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Order.Designer.vb">
-      <DependentUpon>Form_Order.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Form_Order.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -231,10 +207,6 @@
     <Compile Include="ResetPassword.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TambahJenisBarang.Designer.vb">
-      <DependentUpon>TambahJenisBarang.vb</DependentUpon>
-    </Compile>
-    <Compile Include="TambahJenisBarang.vb" />
     <Compile Include="Transisi.Designer.vb">
       <DependentUpon>Transisi.vb</DependentUpon>
     </Compile>
@@ -255,11 +227,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Barang_Masuk.resx">
-      <DependentUpon>Barang_Masuk.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Data_Barang.resx">
-      <DependentUpon>Data_Barang.vb</DependentUpon>
+    <EmbeddedResource Include="Daftar.resx">
+      <DependentUpon>Daftar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Edit Barang.resx">
       <DependentUpon>Edit Barang.vb</DependentUpon>
@@ -267,32 +236,17 @@
     <EmbeddedResource Include="Edit Stock.resx">
       <DependentUpon>Edit Stock.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditJenisBarang.resx">
-      <DependentUpon>EditJenisBarang.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form Barang.resx">
       <DependentUpon>Form Barang.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hapus Barang.resx">
       <DependentUpon>Hapus Barang.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HapusJenisBarang.resx">
-      <DependentUpon>HapusJenisBarang.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Info Barang.resx">
       <DependentUpon>Info Barang.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InfoJenisBarang.resx">
-      <DependentUpon>InfoJenisBarang.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="JenisBarang.resx">
-      <DependentUpon>JenisBarang.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_Order.resx">
-      <DependentUpon>Form_Order.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -305,9 +259,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ResetPassword.resx">
       <DependentUpon>ResetPassword.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TambahJenisBarang.resx">
-      <DependentUpon>TambahJenisBarang.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transisi.resx">
       <DependentUpon>Transisi.vb</DependentUpon>
