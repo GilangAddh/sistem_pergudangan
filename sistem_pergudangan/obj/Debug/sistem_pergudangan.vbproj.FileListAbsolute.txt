@@ -24,7 +24,6 @@ C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\bin\Debug\System.Memory.xml
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.vbproj.AssemblyReference.cache
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.BuatAkun.resources
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Daftar.resources
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Login.resources
@@ -134,7 +133,6 @@ C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\ob
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.exe
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.xml
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.pdb
->>>>>>> lanangpras
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Barang_Masuk.resources
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Data_Barang.resources
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.EditJenisBarang.resources
