@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `barang` (
   `id_barang` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `Id_jenis_barang` int(11) NOT NULL,
   `barang` varchar(255) NOT NULL DEFAULT '0',
-  `stock` int(11) NOT NULL DEFAULT 0,
+  `stock` int(11) DEFAULT 0,
   `dir_gambar_barang` text NOT NULL,
   `deskripsi` longtext NOT NULL,
   `tahun_pembuatan` year(4) NOT NULL,
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `barang` (
   PRIMARY KEY (`id_barang`),
   KEY `FK_barang_jenisbarang` (`Id_jenis_barang`),
   CONSTRAINT `FK_barang_jenisbarang` FOREIGN KEY (`Id_jenis_barang`) REFERENCES `jenis_barang` (`id_jenis_barang`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4;
 
 -- Data exporting was unselected.
 
@@ -48,8 +48,8 @@ CREATE TABLE IF NOT EXISTS `barang_masuk` (
   `jumlah_masuk` int(11) NOT NULL,
   PRIMARY KEY (`id_barang_masuk`),
   KEY `FK_barangmasuk_order` (`id_order`),
-  CONSTRAINT `FK_barangmasuk_order` FOREIGN KEY (`id_order`) REFERENCES `order` (`id_order`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+  CONSTRAINT `FK_barang_masuk_table_order` FOREIGN KEY (`id_order`) REFERENCES `table_order` (`id_order`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
 
 -- Data exporting was unselected.
 
@@ -59,24 +59,24 @@ CREATE TABLE IF NOT EXISTS `jenis_barang` (
   `id_jenis_barang` int(11) NOT NULL AUTO_INCREMENT,
   `jenis_barang` varchar(255) NOT NULL DEFAULT '',
   `satuan` varchar(255) NOT NULL DEFAULT '',
-  `catatan` varchar(100) DEFAULT NULL,
+  `catatan` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id_jenis_barang`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4;
 
 -- Data exporting was unselected.
 
--- Dumping structure for table pergudangan.order
-DROP TABLE IF EXISTS `order`;
-CREATE TABLE IF NOT EXISTS `order` (
+-- Dumping structure for table pergudangan.table_order
+DROP TABLE IF EXISTS `table_order`;
+CREATE TABLE IF NOT EXISTS `table_order` (
   `id_order` int(11) NOT NULL AUTO_INCREMENT,
   `id_barang` int(11) unsigned NOT NULL,
+  `jumlah_order` int(11) NOT NULL DEFAULT 0,
   `tanggal_order` date NOT NULL,
-  `jumlah_order` int(11) NOT NULL,
-  `status` varchar(255) NOT NULL,
-  PRIMARY KEY (`id_order`) USING BTREE,
-  KEY `FK_order_barang` (`id_barang`),
-  CONSTRAINT `FK_order_barang` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id_barang`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+  `status` varchar(50) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id_order`),
+  KEY `FK_id_barang` (`id_barang`),
+  CONSTRAINT `FK_id_barang` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id_barang`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
 
 -- Data exporting was unselected.
 
@@ -94,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `jabatan` varchar(255) NOT NULL DEFAULT '0',
   `kode_akses` varchar(255) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
 -- Data exporting was unselected.
 

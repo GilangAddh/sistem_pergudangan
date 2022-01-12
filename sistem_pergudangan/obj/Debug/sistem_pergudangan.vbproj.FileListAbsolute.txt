@@ -124,7 +124,6 @@ C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\bi
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.vbprojAssemblyReference.cache
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Barang_Masuk.resources
-<<<<<<< HEAD
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.BuatAkun.resources
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Daftar.resources
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Data_Barang.resources
@@ -134,18 +133,12 @@ C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\ob
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.ResetAkun.resources
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.ResetPassword.resources
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Transisi.resources
-=======
-C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Data_Barang.resources
-C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Form_Order.resources
-C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Resources.resources
->>>>>>> 9d8730cfb424eb514b2a1940295464af389094d9
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.vbproj.GenerateResource.cache
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.vbproj.CoreCompileInputs.cache
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.vbproj.CopyComplete
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.exe
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.xml
 C:\Users\USER\cloning_repository_github\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.pdb
-<<<<<<< HEAD
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Barang_Masuk.resources
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Data_Barang.resources
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.EditJenisBarang.resources
@@ -154,8 +147,6 @@ C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.JenisBarang.resources
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Form_Order.resources
 C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.TambahJenisBarang.resources
-=======
-<<<<<<< HEAD
 C:\Users\USER\Documents\SISTEM PERGUDANGAN\sistem_pergudangan\sistem_pergudangan\bin\Debug\sistem_pergudangan.exe.config
 C:\Users\USER\Documents\SISTEM PERGUDANGAN\sistem_pergudangan\sistem_pergudangan\bin\Debug\sistem_pergudangan.exe
 C:\Users\USER\Documents\SISTEM PERGUDANGAN\sistem_pergudangan\sistem_pergudangan\bin\Debug\sistem_pergudangan.pdb
@@ -199,6 +190,4 @@ C:\Users\USER\Documents\SISTEM PERGUDANGAN\sistem_pergudangan\sistem_pergudangan
 C:\Users\USER\Documents\SISTEM PERGUDANGAN\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.exe
 C:\Users\USER\Documents\SISTEM PERGUDANGAN\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.xml
 C:\Users\USER\Documents\SISTEM PERGUDANGAN\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.pdb
-=======
->>>>>>> 9d8730cfb424eb514b2a1940295464af389094d9
->>>>>>> 08e44f46c76d0ced7ad1fca1061f8066d7e09ae4
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.vbproj.AssemblyReference.cache

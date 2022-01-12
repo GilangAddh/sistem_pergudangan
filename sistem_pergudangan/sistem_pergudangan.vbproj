@@ -133,15 +133,6 @@
     <Compile Include="Barang.vb" />
     <Compile Include="Barang_Masuk.Designer.vb">
       <DependentUpon>Barang_Masuk.vb</DependentUpon>
-<<<<<<< HEAD
-    </Compile>
-    <Compile Include="Barang_Masuk.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BuatAkun.Designer.vb">
-      <DependentUpon>BuatAkun.vb</DependentUpon>
-=======
->>>>>>> 9d8730cfb424eb514b2a1940295464af389094d9
     </Compile>
     <Compile Include="Barang_Masuk.vb">
       <SubType>Form</SubType>
@@ -154,27 +145,12 @@
     </Compile>
     <Compile Include="ClassJenisBarang.vb" />
     <Compile Include="ClassOrder.vb" />
-<<<<<<< HEAD
     <Compile Include="Daftar.Designer.vb">
       <DependentUpon>Daftar.vb</DependentUpon>
     </Compile>
     <Compile Include="Daftar.vb">
       <SubType>Form</SubType>
     </Compile>
-=======
-<<<<<<< HEAD
-    <Compile Include="Daftar.Designer.vb">
-      <DependentUpon>Daftar.vb</DependentUpon>
-=======
-    <Compile Include="Data_Barang.Designer.vb">
-      <DependentUpon>Data_Barang.vb</DependentUpon>
->>>>>>> 9d8730cfb424eb514b2a1940295464af389094d9
-    </Compile>
-    <Compile Include="Data_Barang.vb">
-      <SubType>Form</SubType>
-    </Compile>
-<<<<<<< HEAD
->>>>>>> 08e44f46c76d0ced7ad1fca1061f8066d7e09ae4
     <Compile Include="Data_Barang.Designer.vb">
       <DependentUpon>Data_Barang.vb</DependentUpon>
     </Compile>
@@ -241,23 +217,11 @@
     <Compile Include="Form_Order.vb">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
-=======
-    <Compile Include="Login.vb">
-      <SubType>Form</SubType>
-=======
-    <Compile Include="Form_Order.Designer.vb">
-      <DependentUpon>Form_Order.vb</DependentUpon>
->>>>>>> 9d8730cfb424eb514b2a1940295464af389094d9
-    </Compile>
-    <Compile Include="Form_Order.vb">
-      <SubType>Form</SubType>
->>>>>>> 08e44f46c76d0ced7ad1fca1061f8066d7e09ae4
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -312,24 +276,13 @@
   <ItemGroup>
     <EmbeddedResource Include="Barang_Masuk.resx">
       <DependentUpon>Barang_Masuk.vb</DependentUpon>
-<<<<<<< HEAD
     </EmbeddedResource>
     <EmbeddedResource Include="BuatAkun.resx">
       <DependentUpon>BuatAkun.vb</DependentUpon>
-<<<<<<< HEAD
     </EmbeddedResource>
     <EmbeddedResource Include="Daftar.resx">
       <DependentUpon>Daftar.vb</DependentUpon>
     </EmbeddedResource>
-=======
-=======
->>>>>>> 9d8730cfb424eb514b2a1940295464af389094d9
-    </EmbeddedResource>
-    <EmbeddedResource Include="Data_Barang.resx">
-      <DependentUpon>Data_Barang.vb</DependentUpon>
-    </EmbeddedResource>
-<<<<<<< HEAD
->>>>>>> 08e44f46c76d0ced7ad1fca1061f8066d7e09ae4
     <EmbeddedResource Include="Data_Barang.resx">
       <DependentUpon>Data_Barang.vb</DependentUpon>
     </EmbeddedResource>
@@ -365,13 +318,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
-<<<<<<< HEAD
-=======
-=======
-    <EmbeddedResource Include="Form_Order.resx">
-      <DependentUpon>Form_Order.vb</DependentUpon>
->>>>>>> 9d8730cfb424eb514b2a1940295464af389094d9
->>>>>>> 08e44f46c76d0ced7ad1fca1061f8066d7e09ae4
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
