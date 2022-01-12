@@ -39,12 +39,12 @@ Partial Class TambahJenisBarang
         'LblTitle
         '
         Me.LblTitle.AutoSize = True
-        Me.LblTitle.Font = New System.Drawing.Font("News706 BT", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblTitle.Location = New System.Drawing.Point(20, 20)
+        Me.LblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTitle.Location = New System.Drawing.Point(32, 21)
         Me.LblTitle.Name = "LblTitle"
-        Me.LblTitle.Size = New System.Drawing.Size(313, 22)
+        Me.LblTitle.Size = New System.Drawing.Size(293, 24)
         Me.LblTitle.TabIndex = 0
-        Me.LblTitle.Text = "Tambah Jenis Barang Gudang A"
+        Me.LblTitle.Text = "Tambah Jenis Barang Gudang"
         '
         'LblJenisBarang
         '

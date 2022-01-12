@@ -38,6 +38,9 @@ Public Class Add_Barang
         ElseIf TxtStock.Text.Length < 1 Then
             TxtStock.Select()
             MessageBox.Show("Stock tidak boleh kosong!")
+        ElseIf TxtStock.Text = 0 Then
+            TxtStock.Select()
+            MessageBox.Show("Stock tidak boleh kosong!")
         ElseIf (RadioButtonOriginal.Checked = False) And (RadioButtonPremium.Checked = False) Then
             MessageBox.Show("Pilih kualitas barang!")
         ElseIf (CheckBoxGrosir.Checked = False) And (CheckBoxOnlineShop.Checked = False) And (CheckBoxTokoBrand.Checked = False) Then

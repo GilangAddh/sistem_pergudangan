@@ -37,14 +37,14 @@ Partial Class Transisi
         '
         Me.PnlLogo.BackgroundImage = Global.sistem_pergudangan.My.Resources.Resources.Adidas
         Me.PnlLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PnlLogo.Location = New System.Drawing.Point(59, 28)
+        Me.PnlLogo.Location = New System.Drawing.Point(82, 28)
         Me.PnlLogo.Name = "PnlLogo"
         Me.PnlLogo.Size = New System.Drawing.Size(112, 74)
         Me.PnlLogo.TabIndex = 39
         '
         'BtnAksesJenisBarang
         '
-        Me.BtnAksesJenisBarang.Location = New System.Drawing.Point(27, 162)
+        Me.BtnAksesJenisBarang.Location = New System.Drawing.Point(50, 162)
         Me.BtnAksesJenisBarang.Name = "BtnAksesJenisBarang"
         Me.BtnAksesJenisBarang.Size = New System.Drawing.Size(171, 23)
         Me.BtnAksesJenisBarang.TabIndex = 40
@@ -53,7 +53,7 @@ Partial Class Transisi
         '
         'BtnAksesBarang
         '
-        Me.BtnAksesBarang.Location = New System.Drawing.Point(27, 212)
+        Me.BtnAksesBarang.Location = New System.Drawing.Point(50, 212)
         Me.BtnAksesBarang.Name = "BtnAksesBarang"
         Me.BtnAksesBarang.Size = New System.Drawing.Size(171, 23)
         Me.BtnAksesBarang.TabIndex = 41
@@ -62,7 +62,7 @@ Partial Class Transisi
         '
         'BtnAksesOrder
         '
-        Me.BtnAksesOrder.Location = New System.Drawing.Point(27, 261)
+        Me.BtnAksesOrder.Location = New System.Drawing.Point(50, 261)
         Me.BtnAksesOrder.Name = "BtnAksesOrder"
         Me.BtnAksesOrder.Size = New System.Drawing.Size(171, 23)
         Me.BtnAksesOrder.TabIndex = 42
@@ -71,7 +71,7 @@ Partial Class Transisi
         '
         'BtnMasukBarang
         '
-        Me.BtnMasukBarang.Location = New System.Drawing.Point(27, 310)
+        Me.BtnMasukBarang.Location = New System.Drawing.Point(50, 310)
         Me.BtnMasukBarang.Name = "BtnMasukBarang"
         Me.BtnMasukBarang.Size = New System.Drawing.Size(171, 23)
         Me.BtnMasukBarang.TabIndex = 43
@@ -83,7 +83,7 @@ Partial Class Transisi
         Me.ToolStripTransisi.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButtonBack})
         Me.ToolStripTransisi.Location = New System.Drawing.Point(0, 0)
         Me.ToolStripTransisi.Name = "ToolStripTransisi"
-        Me.ToolStripTransisi.Size = New System.Drawing.Size(222, 25)
+        Me.ToolStripTransisi.Size = New System.Drawing.Size(268, 25)
         Me.ToolStripTransisi.TabIndex = 44
         Me.ToolStripTransisi.Text = "ToolStripButtunBack"
         '
@@ -100,7 +100,7 @@ Partial Class Transisi
         '
         Me.LblPilih.AutoSize = True
         Me.LblPilih.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblPilih.Location = New System.Drawing.Point(12, 128)
+        Me.LblPilih.Location = New System.Drawing.Point(9, 126)
         Me.LblPilih.Name = "LblPilih"
         Me.LblPilih.Size = New System.Drawing.Size(135, 13)
         Me.LblPilih.TabIndex = 45
@@ -110,7 +110,7 @@ Partial Class Transisi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(222, 356)
+        Me.ClientSize = New System.Drawing.Size(268, 356)
         Me.Controls.Add(Me.LblPilih)
         Me.Controls.Add(Me.ToolStripTransisi)
         Me.Controls.Add(Me.BtnMasukBarang)

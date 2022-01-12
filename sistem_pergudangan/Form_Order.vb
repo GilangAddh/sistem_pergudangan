@@ -13,8 +13,6 @@
         TxtB_JumlahOrder.Text = Data_Barang.orderbarang.GSJumlahOrder
         TextBox_TanggalOrder.Text = Data_Barang.orderbarang.GSTanggalOrder
 
-
-
     End Sub
 
     Private Sub Button_Cari_Click(sender As Object, e As EventArgs) Handles Button_Cari.Click

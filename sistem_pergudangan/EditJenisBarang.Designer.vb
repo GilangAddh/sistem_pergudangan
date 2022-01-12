@@ -115,12 +115,12 @@ Partial Class EditJenisBarang
         'LblTitle
         '
         Me.LblTitle.AutoSize = True
-        Me.LblTitle.Font = New System.Drawing.Font("News706 BT", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LblTitle.Location = New System.Drawing.Point(39, 20)
         Me.LblTitle.Name = "LblTitle"
-        Me.LblTitle.Size = New System.Drawing.Size(276, 22)
+        Me.LblTitle.Size = New System.Drawing.Size(253, 24)
         Me.LblTitle.TabIndex = 10
-        Me.LblTitle.Text = "Edit Jenis Barang Gudang A"
+        Me.LblTitle.Text = "Edit Jenis Barang Gudang"
         '
         'EditJenisBarang
         '

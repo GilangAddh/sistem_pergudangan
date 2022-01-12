@@ -31,12 +31,12 @@ Partial Class HapusJenisBarang
         'LblTitle
         '
         Me.LblTitle.AutoSize = True
-        Me.LblTitle.Font = New System.Drawing.Font("News706 BT", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblTitle.Location = New System.Drawing.Point(30, 20)
+        Me.LblTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblTitle.Location = New System.Drawing.Point(43, 32)
         Me.LblTitle.Name = "LblTitle"
-        Me.LblTitle.Size = New System.Drawing.Size(297, 22)
+        Me.LblTitle.Size = New System.Drawing.Size(277, 24)
         Me.LblTitle.TabIndex = 1
-        Me.LblTitle.Text = "Hapus Jenis Barang Gudang A"
+        Me.LblTitle.Text = "Hapus Jenis Barang Gudang"
         '
         'LabelKonfirmasi
         '
