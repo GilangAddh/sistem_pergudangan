@@ -10,21 +10,17 @@
 
         ' Add any initialization after the InitializeComponent() call.
         orderbarang = New ClassOrder
-        ReloadDataBarangDatabase()
-    End Sub
-
-    Public Sub ReloadDataBarangDatabase()
-
-        DGV_Data_Barang.DataSource = orderbarang.GetDataBarangBySearchNamaBarangDatabase(Form_Order.Txt_CariNama.Text)
 
     End Sub
+
+
 
     Private Sub Data_Barang_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-        ReloadDataBarangDatabase()
+
     End Sub
 
     Private Sub DGV_Data_Barang_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DGV_Data_Barang.CellMouseClick
-        NamaBarang = DGV_Data_Barang.Rows(e.RowIndex).Cells(2).Value
+        NamaBarang = DGV_Data_Barang.Rows(e.RowIndex).Cells(1).Value
         IDBarang = DGV_Data_Barang.Rows(e.RowIndex).Cells(0).Value
     End Sub
 
@@ -36,5 +32,13 @@
         Form_Order.TxtBox_NamaBarang.Text = NamaBarang
         Form_Order.LabelIDBarang.Text = IDBarang
 
+    End Sub
+
+    Private Sub Button_Cari_Data_Click(sender As Object, e As EventArgs) Handles Button_Cari_Data.Click
+        If Txt_CariNama.Text.Length = 0 Then
+            MessageBox.Show("Masukkan Nama Barang yang Dicari!")
+        Else
+            DGV_Data_Barang.DataSource = orderbarang.GetDataBarangBySearchNamaBarangDatabase(Txt_CariNama.Text)
+        End If
     End Sub
 End Class

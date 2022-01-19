@@ -1,7 +1,10 @@
 ﻿Public Class Form_Order
 
-    Public Shared selectedIDOrder
+    Public Shared selectedIDOrder As String
     Public Shared selecttableorderbarang
+    Public Shared selectedstockbarang
+    Public Shared selectedJumlahOrder As String
+
 
 
     Public Sub New()
@@ -12,6 +15,8 @@
         ' Add any initialization after the InitializeComponent() call.
         TxtB_JumlahOrder.Text = Data_Barang.orderbarang.GSJumlahOrder
         TextBox_TanggalOrder.Text = Data_Barang.orderbarang.GSTanggalOrder
+        DateTimePicker_TanggalOrder.Format = DateTimePickerFormat.Custom
+        DateTimePicker_TanggalOrder.CustomFormat = "yyyy/MM/dd"
 
     End Sub
 
@@ -19,26 +24,27 @@
         Dim dataBarang = New Data_Barang()
 
 
-        If Txt_CariNama.Text.Length = 0 Then
-            Txt_CariNama.Select()
-            MessageBox.Show("Isi Nama Barang yang Ingin Dicari!")
-        Else
-            dataBarang.Show()
-            Data_Barang.ReloadDataBarangDatabase()
-        End If
+
+        dataBarang.Show()
+
+
 
     End Sub
 
+
+
     Private Sub ReloadDataBarangJoinOrderDatabase()
-        DGV_Barang_Order.DataSource = Data_Barang.orderbarang.GetDataOrderJoinBarangDatabase()
+        DGV_Barang_Order.DataSource = Data_Barang.orderbarang.GetDataOrderJoinBarangDatabase(LabelIDBarang.Text)
     End Sub
 
     Private Sub Form_Order_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-        ReloadDataBarangJoinOrderDatabase()
+
     End Sub
 
     Private Sub DGV_Barang_Order_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DGV_Barang_Order.CellMouseClick
-        selectedIDOrder = DGV_Barang_Order.Rows(e.RowIndex).Cells(0)
+        selectedIDOrder = DGV_Barang_Order.Rows(e.RowIndex).Cells(0).Value
+        selectedstockbarang = DGV_Barang_Order.Rows(e.RowIndex).Cells(2).Value
+        selectedJumlahOrder = DGV_Barang_Order.Rows(e.RowIndex).Cells(4).Value
     End Sub
 
     Private Sub Button_Simpan_Click(sender As Object, e As EventArgs) Handles Button_Simpan.Click
@@ -49,11 +55,16 @@
         Data_Barang.orderbarang.GSJumlahOrder = Integer.Parse(TxtB_JumlahOrder.Text)
         Data_Barang.orderbarang.GSTanggalOrder = TextBox_TanggalOrder.Text
         Data_Barang.orderbarang.GSIDBarang = LabelIDBarang.Text
+        Data_Barang.orderbarang.GSNamaBarang = TxtBox_NamaBarang.Text
+
+        Data_Barang.orderbarang.AddDataTableOrderDatabase(Data_Barang.orderbarang.GSJumlahOrder,
+                                                          Data_Barang.orderbarang.GSTanggalOrder,
+                                                          Data_Barang.orderbarang.GSNamaBarang)
+
+        ReloadDataBarangJoinOrderDatabase()
 
 
-        Data_Barang.orderbarang.UpdateDataOrderJoinBarangBYIDBarangDatabase(Data_Barang.orderbarang.GSJumlahOrder,
-                                                                            Data_Barang.orderbarang.GSTanggalOrder,
-                                                                            Data_Barang.orderbarang.GSIDBarang)
+
     End Sub
 
     Private Sub Btn_Tampilkan_Click(sender As Object, e As EventArgs) Handles Btn_Tampilkan.Click
@@ -76,5 +87,14 @@
         Dim BM = New Barang_Masuk
 
         BM.Show()
+
+
+
+    End Sub
+
+    Private Sub Button_Order_Lagi_Click(sender As Object, e As EventArgs) 
+        Dim FO = New Form_Order()
+
+        FO.Show()
     End Sub
 End Class

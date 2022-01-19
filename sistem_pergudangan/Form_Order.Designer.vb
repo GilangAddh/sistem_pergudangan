@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form_Order
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form_Order
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.DGV_Barang_Order = New System.Windows.Forms.DataGridView()
         Me.LblNamaBarang = New System.Windows.Forms.Label()
@@ -34,20 +34,16 @@ Partial Class Form_Order
         Me.TextBox_TanggalOrder = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Btn_Tampilkan = New System.Windows.Forms.Button()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Txt_CariNama = New System.Windows.Forms.TextBox()
         Me.LabelIDBarang = New System.Windows.Forms.Label()
         CType(Me.DGV_Barang_Order, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'DGV_Barang_Order
         '
         Me.DGV_Barang_Order.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGV_Barang_Order.Location = New System.Drawing.Point(12, 165)
+        Me.DGV_Barang_Order.Location = New System.Drawing.Point(12, 12)
         Me.DGV_Barang_Order.Name = "DGV_Barang_Order"
-        Me.DGV_Barang_Order.Size = New System.Drawing.Size(419, 177)
+        Me.DGV_Barang_Order.Size = New System.Drawing.Size(483, 178)
         Me.DGV_Barang_Order.TabIndex = 0
         '
         'LblNamaBarang
@@ -91,7 +87,7 @@ Partial Class Form_Order
         '
         'Button_Cari
         '
-        Me.Button_Cari.Location = New System.Drawing.Point(310, 51)
+        Me.Button_Cari.Location = New System.Drawing.Point(882, 26)
         Me.Button_Cari.Name = "Button_Cari"
         Me.Button_Cari.Size = New System.Drawing.Size(58, 22)
         Me.Button_Cari.TabIndex = 7
@@ -100,20 +96,20 @@ Partial Class Form_Order
         '
         'Button_Simpan
         '
-        Me.Button_Simpan.Location = New System.Drawing.Point(749, 334)
+        Me.Button_Simpan.Location = New System.Drawing.Point(635, 334)
         Me.Button_Simpan.Name = "Button_Simpan"
-        Me.Button_Simpan.Size = New System.Drawing.Size(58, 22)
+        Me.Button_Simpan.Size = New System.Drawing.Size(132, 22)
         Me.Button_Simpan.TabIndex = 8
-        Me.Button_Simpan.Text = "Simpan"
+        Me.Button_Simpan.Text = "Simpan ke Database"
         Me.Button_Simpan.UseVisualStyleBackColor = True
         '
         'Button_Tambah
         '
-        Me.Button_Tambah.Location = New System.Drawing.Point(882, 334)
+        Me.Button_Tambah.Location = New System.Drawing.Point(839, 334)
         Me.Button_Tambah.Name = "Button_Tambah"
-        Me.Button_Tambah.Size = New System.Drawing.Size(58, 22)
+        Me.Button_Tambah.Size = New System.Drawing.Size(101, 22)
         Me.Button_Tambah.TabIndex = 9
-        Me.Button_Tambah.Text = "Tambah"
+        Me.Button_Tambah.Text = "Tambah Order"
         Me.Button_Tambah.UseVisualStyleBackColor = True
         '
         'TextBox_TanggalOrder
@@ -134,41 +130,12 @@ Partial Class Form_Order
         '
         'Btn_Tampilkan
         '
-        Me.Btn_Tampilkan.Location = New System.Drawing.Point(882, 163)
+        Me.Btn_Tampilkan.Location = New System.Drawing.Point(635, 207)
         Me.Btn_Tampilkan.Name = "Btn_Tampilkan"
-        Me.Btn_Tampilkan.Size = New System.Drawing.Size(72, 22)
+        Me.Btn_Tampilkan.Size = New System.Drawing.Size(90, 36)
         Me.Btn_Tampilkan.TabIndex = 12
-        Me.Btn_Tampilkan.Text = "Tampilkan"
+        Me.Btn_Tampilkan.Text = "Tampilkan Tanngal Order"
         Me.Btn_Tampilkan.UseVisualStyleBackColor = True
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.Txt_CariNama)
-        Me.GroupBox1.Controls.Add(Me.Button_Cari)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(426, 125)
-        Me.GroupBox1.TabIndex = 13
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Kolom Pencarian"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(95, 20)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(156, 16)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "Pencarian Nama Barang"
-        '
-        'Txt_CariNama
-        '
-        Me.Txt_CariNama.Location = New System.Drawing.Point(111, 53)
-        Me.Txt_CariNama.Name = "Txt_CariNama"
-        Me.Txt_CariNama.Size = New System.Drawing.Size(118, 20)
-        Me.Txt_CariNama.TabIndex = 14
         '
         'LabelIDBarang
         '
@@ -186,7 +153,7 @@ Partial Class Form_Order
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(966, 394)
         Me.Controls.Add(Me.LabelIDBarang)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Button_Cari)
         Me.Controls.Add(Me.Btn_Tampilkan)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox_TanggalOrder)
@@ -201,8 +168,6 @@ Partial Class Form_Order
         Me.Name = "Form_Order"
         Me.Text = "Form_Order"
         CType(Me.DGV_Barang_Order, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -220,8 +185,5 @@ Partial Class Form_Order
     Friend WithEvents TextBox_TanggalOrder As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Btn_Tampilkan As Button
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Txt_CariNama As TextBox
     Friend WithEvents LabelIDBarang As Label
 End Class

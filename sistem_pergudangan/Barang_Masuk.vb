@@ -1,11 +1,12 @@
 ﻿Public Class Barang_Masuk
     Public Shared IDORDER
-    Public Shared Perbandingan
+    Public Shared JumlahOrder
     Public Shared jumlahmasukbarang
     Public Shared statusbarang
-    Public Shared stock
     Public Shared namaBarang
     Public Shared IDbarang
+    Public Shared selecteIDBarangMasuk
+    Public Shared selectedIDOrder
 
 
 
@@ -16,29 +17,38 @@
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
-        ReloadDataBarangMasukDatabase()
+
         TxtBoxIDOrder.Text = IDORDER
-        TextBoxJumlahOrder.Text = Perbandingan
-        Label_idbarang.Text = IDbarang
+        TextBoxJumlahOrder.Text = JumlahOrder
+        LabelIDBarang.Text = IDbarang
+
+        ReloadDataOrderDatabase()
+
 
     End Sub
 
-    Private Sub ReloadDataBarangMasukDatabase()
-        DGV_Barang_Order.DataSource = Data_Barang.orderbarang.GetDataBarangMasukDatabase()
+    Private Sub ReloadDataOrderDatabase()
+        DGV_Barang_Order.DataSource = Data_Barang.orderbarang.GetDataOrderDatabase()
     End Sub
+
+    Public Sub ReloadDataBarangMasuk()
+        DataGridView1.DataSource = Data_Barang.orderbarang.GetDataBarangMasukDatabase()
+    End Sub
+
+    Private Sub ReloadDataOrderJoinBarangMasukDatabase()
+        DGV_Barang_Order.DataSource = Data_Barang.orderbarang.GetDataOrderJoinBarangMasukBYIDOrderDatabase(TxtBoxIDOrder.Text)
+    End Sub
+
 
     Private Sub Barang_Masuk_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-        ReloadDataBarangMasukDatabase()
+        ReloadDataOrderDatabase()
 
     End Sub
 
     Private Sub DGV_Barang_Order_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DGV_Barang_Order.CellMouseClick
-        IDORDER = DGV_Barang_Order.Rows(e.RowIndex).Cells(2).Value
-        Perbandingan = DGV_Barang_Order.Rows(e.RowIndex).Cells(7).Value
-        statusbarang = DGV_Barang_Order.Rows(e.RowIndex).Cells(9).Value
-        stock = DGV_Barang_Order.Rows(e.RowIndex).Cells(4).Value
-        namaBarang = DGV_Barang_Order.Rows(e.RowIndex).Cells(3).Value
-        IDbarang = DGV_Barang_Order.Rows(e.RowIndex).Cells(0).Value
+        JumlahOrder = DGV_Barang_Order.Rows(e.RowIndex).Cells(2).Value
+        IDORDER = DGV_Barang_Order.Rows(e.RowIndex).Cells(0).Value
+        IDbarang = DGV_Barang_Order.Rows(e.RowIndex).Cells(1).Value
     End Sub
 
 
@@ -46,8 +56,9 @@
     Private Sub Button_Tampilkan_Click(sender As Object, e As EventArgs) Handles Button_Tampilkan.Click
 
         TxtBoxIDOrder.Text = IDORDER
-        TextBoxJumlahOrder.Text = Perbandingan
-        Label_idbarang.Text = IDbarang
+        TextBoxJumlahOrder.Text = JumlahOrder
+        LabelIDBarang.Text = IDbarang
+
 
 
 
@@ -71,44 +82,71 @@
 
 
     Private Sub ButtonUpdate_Click(sender As Object, e As EventArgs) Handles ButtonUpdate.Click
-        Data_Barang.orderbarang.GSStockBarang = TxtboxJumlahMasuk.Text + stock
-        Data_Barang.orderbarang.GSIDBarang = Label_idbarang.Text
+        Data_Barang.orderbarang.GSStockBarang = TxtboxJumlahMasuk.Text + Form_Order.selectedstockbarang
+
         Data_Barang.orderbarang.GSIDOrder = TxtBoxIDOrder.Text
-        Data_Barang.orderbarang.GSJumlahMasuk = TxtboxJumlahMasuk.Text
+
 
         Data_Barang.orderbarang.UpdateDataStockDatabase(Data_Barang.orderbarang.GSStockBarang,
                                                         Data_Barang.orderbarang.GSIDBarang)
 
-        Data_Barang.orderbarang.UpdateJumlahMasukBarangBYIDOrder(Data_Barang.orderbarang.GSIDOrder,
-                                                                 Data_Barang.orderbarang.GSJumlahMasuk)
 
 
 
+        Form_Order.DGV_Barang_Order.DataSource = Data_Barang.orderbarang.GetDataOrderJoinBarangDatabase(Form_Order.LabelIDBarang.Text)
 
-        DGV_Barang_Order.DataSource = Data_Barang.orderbarang.GetDataBarangMasukDatabase()
+
 
     End Sub
 
     Private Sub BtnSimpan_Click(sender As Object, e As EventArgs) Handles BtnSimpan.Click
         Data_Barang.orderbarang.GSStatusOrder = LabelStatus.Text
-        Data_Barang.orderbarang.GSIDOrder = TxtBoxIDOrder.Text
-
+        Data_Barang.orderbarang.GSIDOrder = Integer.Parse(TxtBoxIDOrder.Text)
+        Data_Barang.orderbarang.GSJumlahMasuk = Integer.Parse(TxtboxJumlahMasuk.Text)
+        Data_Barang.orderbarang.GSIDBarang = Integer.Parse(LabelIDBarang.Text)
 
         Data_Barang.orderbarang.UpdateDataStatusBarangMasukBYIDOrderDatabase(Data_Barang.orderbarang.GSStatusOrder,
                                                                              Data_Barang.orderbarang.GSIDOrder)
 
+        Data_Barang.orderbarang.AddDataBarangMasukDatabase(Data_Barang.orderbarang.GSIDOrder,
+                                                           Data_Barang.orderbarang.GSJumlahMasuk)
+
+        DataGridView1.DataSource = Data_Barang.orderbarang.GetDataBarangMasukDatabase()
 
 
-        DGV_Barang_Order.DataSource = Data_Barang.orderbarang.GetDataBarangMasukDatabase()
-    End Sub
-
-    Private Sub ButtonClear_Click(sender As Object, e As EventArgs)
-        Data_Barang.orderbarang.GSStatusOrder = LabelStatus.Text
-        Data_Barang.orderbarang.GSIDOrder = TxtBoxIDOrder.Text
-
-        Data_Barang.orderbarang.ClearDataOrderBarangDatabase(Data_Barang.orderbarang.GSStatusOrder,
-                                                             Data_Barang.orderbarang.GSIDOrder)
     End Sub
 
 
+
+
+
+    Private Sub Button_Japus_Click(sender As Object, e As EventArgs) Handles Button_Japus.Click
+
+        Dim HO = New Hapus_Order()
+
+        HO.Show()
+
+    End Sub
+
+    Private Sub DGV_Barang_Order_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGV_Barang_Order.CellClick
+        Dim index As Integer = e.RowIndex
+        Dim selectedrow As DataGridViewRow
+        selectedrow = DGV_Barang_Order.Rows(index)
+
+        selectedIDOrder = selectedrow.Cells(0).Value
+    End Sub
+
+    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+        Dim index As Integer = e.RowIndex
+        Dim selectedrow As DataGridViewRow
+        selectedrow = DataGridView1.Rows(index)
+
+        selecteIDBarangMasuk = selectedrow.Cells(0).Value
+    End Sub
+
+    Private Sub Btn_Hapus_Barang_Masuk_Click(sender As Object, e As EventArgs) Handles Btn_Hapus_Barang_Masuk.Click
+        Dim HBM = New Hapus_Barang_Masuk()
+
+        HBM.Show()
+    End Sub
 End Class
