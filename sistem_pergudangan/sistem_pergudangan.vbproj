@@ -118,79 +118,17 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add Barang.Designer.vb">
-      <DependentUpon>Add Barang.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Add Barang.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Akses Barang.Designer.vb">
-      <DependentUpon>Akses Barang.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Akses Barang.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Barang.vb" />
     <Compile Include="Barang_Masuk.Designer.vb">
       <DependentUpon>Barang_Masuk.vb</DependentUpon>
     </Compile>
     <Compile Include="Barang_Masuk.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuatAkun.Designer.vb">
-      <DependentUpon>BuatAkun.vb</DependentUpon>
-    </Compile>
-    <Compile Include="BuatAkun.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClassJenisBarang.vb" />
     <Compile Include="ClassOrder.vb" />
-    <Compile Include="Daftar.Designer.vb">
-      <DependentUpon>Daftar.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Daftar.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Data_Barang.Designer.vb">
       <DependentUpon>Data_Barang.vb</DependentUpon>
     </Compile>
     <Compile Include="Data_Barang.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Edit Barang.Designer.vb">
-      <DependentUpon>Edit Barang.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Edit Barang.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Edit Stock.Designer.vb">
-      <DependentUpon>Edit Stock.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Edit Stock.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EditJenisBarang.Designer.vb">
-      <DependentUpon>EditJenisBarang.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EditJenisBarang.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form Barang.Designer.vb">
-      <DependentUpon>Form Barang.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Form Barang.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Hapus Barang.Designer.vb">
-      <DependentUpon>Hapus Barang.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Hapus Barang.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HapusJenisBarang.Designer.vb">
-      <DependentUpon>HapusJenisBarang.vb</DependentUpon>
-    </Compile>
-    <Compile Include="HapusJenisBarang.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Hapus_Barang_Masuk.Designer.vb">
@@ -205,34 +143,10 @@
     <Compile Include="Hapus_Order.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Info Barang.Designer.vb">
-      <DependentUpon>Info Barang.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Info Barang.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InfoJenisBarang.Designer.vb">
-      <DependentUpon>InfoJenisBarang.vb</DependentUpon>
-    </Compile>
-    <Compile Include="InfoJenisBarang.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="JenisBarang.Designer.vb">
-      <DependentUpon>JenisBarang.vb</DependentUpon>
-    </Compile>
-    <Compile Include="JenisBarang.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Form_Order.Designer.vb">
       <DependentUpon>Form_Order.vb</DependentUpon>
     </Compile>
     <Compile Include="Form_Order.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.vb">
-      <DependentUpon>Login.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -246,70 +160,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ResetAkun.Designer.vb">
-      <DependentUpon>ResetAkun.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ResetAkun.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ResetPassword.Designer.vb">
-      <DependentUpon>ResetPassword.vb</DependentUpon>
-    </Compile>
-    <Compile Include="ResetPassword.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TambahJenisBarang.Designer.vb">
-      <DependentUpon>TambahJenisBarang.vb</DependentUpon>
-    </Compile>
-    <Compile Include="TambahJenisBarang.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Transisi.Designer.vb">
-      <DependentUpon>Transisi.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Transisi.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Users.vb" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Add Barang.resx">
-      <DependentUpon>Add Barang.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Akses Barang.resx">
-      <DependentUpon>Akses Barang.vb</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Barang_Masuk.resx">
       <DependentUpon>Barang_Masuk.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuatAkun.resx">
-      <DependentUpon>BuatAkun.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Daftar.resx">
-      <DependentUpon>Daftar.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Data_Barang.resx">
       <DependentUpon>Data_Barang.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Edit Barang.resx">
-      <DependentUpon>Edit Barang.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Edit Stock.resx">
-      <DependentUpon>Edit Stock.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EditJenisBarang.resx">
-      <DependentUpon>EditJenisBarang.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form Barang.resx">
-      <DependentUpon>Form Barang.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Hapus Barang.resx">
-      <DependentUpon>Hapus Barang.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HapusJenisBarang.resx">
-      <DependentUpon>HapusJenisBarang.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hapus_Barang_Masuk.resx">
       <DependentUpon>Hapus_Barang_Masuk.vb</DependentUpon>
@@ -317,38 +174,14 @@
     <EmbeddedResource Include="Hapus_Order.resx">
       <DependentUpon>Hapus_Order.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Info Barang.resx">
-      <DependentUpon>Info Barang.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InfoJenisBarang.resx">
-      <DependentUpon>InfoJenisBarang.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="JenisBarang.resx">
-      <DependentUpon>JenisBarang.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form_Order.resx">
       <DependentUpon>Form_Order.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ResetAkun.resx">
-      <DependentUpon>ResetAkun.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ResetPassword.resx">
-      <DependentUpon>ResetPassword.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TambahJenisBarang.resx">
-      <DependentUpon>TambahJenisBarang.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Transisi.resx">
-      <DependentUpon>Transisi.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
