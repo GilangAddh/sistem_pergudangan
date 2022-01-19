@@ -121,7 +121,7 @@ Public Class ClassOrder
 
     End Function
 
-    Public Function GetDataOrderJoinBarangDatabase() As DataTable
+    Public Function GetDataOrderJoinBarangDatabase(id_barang As Integer) As DataTable
         Dim result As New DataTable
 
         dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" _
@@ -131,11 +131,11 @@ Public Class ClassOrder
         sqlCommand.CommandText = "SELECT b.id_barang as 'ID Barang',
                                  b.barang as 'Nama Barang',
                                  b.stock as 'Stock',
-                                 b.tahun_pembuatan as 'Tahun Diproduksi',
                                  t.jumlah_order as 'Jumlah Order',
                                  t.status as 'Status'
                                  FROM barang as b
-                                 JOIN table_order as t ON b.id_barang = t.id_barang"
+                                 JOIN table_order as t ON b.id_barang = t.id_barang
+                                 WHERE b.id_barang ='" & id_barang & "'"
 
         sqlRead = sqlCommand.ExecuteReader
 
@@ -152,19 +152,10 @@ Public Class ClassOrder
             + "password =" + password + ";" + "database =" + database
         dbConn.Open()
         sqlCommand.Connection = dbConn
-        sqlCommand.CommandText = "SELECT b.id_barang as 'ID Barang',
-                                 m.id_barang_masuk as 'ID Barang Masuk',
-                                 t.id_order as 'ID Order',
-                                 b.barang as 'Nama Barang',
-                                 b.stock as 'Stock',
-                                 m.jumlah_masuk as 'Jumlah Barang Masuk',
-                                 b.tahun_pembuatan as 'Tahun Diproduksi',
-                                 t.jumlah_order as 'Jumlah Order',
-                                 t.tanggal_order as 'Tanggal Order',
-                                 t.status as 'Status'
-                                 FROM table_order as t
-                                 JOIN barang as b ON b.id_barang = t.id_barang
-                                 JOIN barang_masuk as m ON t.id_order = m.id_order"
+        sqlCommand.CommandText = "SELECT id_barang_masuk as 'ID Barang Masuk',
+                                 id_order as 'ID Order',
+                                 jumlah_masuk as 'Barang Masuk'
+                                 FROM barang_masuk"
 
         sqlRead = sqlCommand.ExecuteReader
 
@@ -183,11 +174,10 @@ Public Class ClassOrder
         Try
             dbConn.Open()
             sqlCommand.Connection = dbConn
-            sqlQuery = "UPDATE table_order SET " &
-                       "jumlah_order ='" & jumlah_order & "', " &
-                       "tanggal_order ='" & tanggal_order.ToString("yyyy/MM/dd") & "' " &
+            sqlQuery = "UPDATE table_order SET" &
+                       "t.jumlah_order ='" & jumlah_order & "'" &
+                       "tanggal_order ='" & tanggal_order & "'" &
                        "WHERE id_barang ='" & id_barang & "'"
-
 
 
 
@@ -241,16 +231,12 @@ Public Class ClassOrder
             + "password=" + password + ";" + "database =" + database
         dbConn.Open()
         sqlCommand.Connection = dbConn
-        sqlCommand.CommandText = "SELECT b.id_barang as 'ID Barang',
-                                 t.id_order as 'ID Order',
-                                 b.barang as 'Nama Barang',
-                                 b.stock as 'Stock',
-                                 b.tahun_pembuatan as 'Tahun Diproduksi',
-                                 t.jumlah_order as 'Jumlah Order',
-                                 t.status as 'Status'
-                                 FROM barang as b
-                                 JOIN table_order as t ON b.id_barang = t.id_barang
-                                 WHERE b.barang LIKE '%" & barang & "%'"
+        sqlCommand.CommandText = "SELECT id_barang as 'ID Barang',
+                                 barang as 'Nama Barang',
+                                 stock as 'Stock',
+                                 tahun_pembuatan as 'Tahun Diproduksi'
+                                 FROM barang 
+                                 WHERE barang LIKE '%" & barang & "%'"
 
         sqlRead = sqlCommand.ExecuteReader
 
@@ -285,35 +271,6 @@ Public Class ClassOrder
         End Try
     End Function
 
-    Public Function ClearDataOrderBarangDatabase(barang As String,
-                                                 status As String)
-        dbConn.ConnectionString = "server =" + server + ";" + "user id =" + username + ";" _
-           + "password =" + password + ";" + "database =" + database
-
-        Try
-            dbConn.Open()
-            sqlCommand.Connection = dbConn
-            sqlQuery = "DELETE  status
-                       FROM table_order
-                        WHERE id_order ='" & barang & "'"
-
-            Debug.WriteLine(sqlQuery)
-
-            sqlCommand = New MySqlCommand(sqlQuery, dbConn)
-            sqlRead = sqlCommand.ExecuteReader
-            dbConn.Close()
-
-            sqlRead.Close()
-            dbConn.Close()
-        Catch ex As Exception
-            Return ex.Message
-        Finally
-            dbConn.Dispose()
-        End Try
-
-
-    End Function
-
     Public Function UpdateJumlahMasukBarangBYIDOrder(id_order As Integer,
                                                      jumlah_masuk As Integer)
 
@@ -343,5 +300,172 @@ Public Class ClassOrder
         End Try
 
 
+    End Function
+
+    Public Function AddDataTableOrderDatabase(jumlah_order As Integer,
+                                              tanggal_order As Date,
+                                              nama_barang As String)
+
+        dbConn.ConnectionString = "server =" + server + ";" + "user id =" + username + ";" _
+            + "password =" + password + ";" + "database =" + database + ";"
+
+        Try
+            dbConn.Open()
+            sqlCommand.Connection = dbConn
+            sqlQuery = "INSERT INTO TABLE_ORDER(id_barang, jumlah_order, tanggal_order)
+                       VALUE(( SELECT id_barang  FROM 
+                        barang as b WHERE barang ='" & nama_barang & "'), '" _
+                        & jumlah_order & "', '" _
+                        & tanggal_order.ToString("yyyy/MM/dd") & "')"
+
+
+
+            sqlCommand = New MySqlCommand(sqlQuery, dbConn)
+            sqlRead = sqlCommand.ExecuteReader
+            dbConn.Close()
+
+            sqlRead.Close()
+            dbConn.Close()
+
+        Catch ex As Exception
+            Return ex.Message
+        Finally
+            dbConn.Dispose()
+        End Try
+
+
+
+    End Function
+
+    Public Function AddDataBarangMasukDatabase(id_order As Integer,
+                                              jumlah_masuk As Integer)
+        dbConn.ConnectionString = "server =" + server + ";" + "user id =" + username + ";" _
+           + "password =" + password + ";" + "database =" + database + ";"
+
+        Try
+            dbConn.Open()
+            sqlCommand.Connection = dbConn
+            sqlQuery = "INSERT INTO BARANG_MASUK (id_order, jumlah_masuk)
+                       VALUE('" _
+                       & id_order & "', '" _
+                       & jumlah_masuk & "')"
+
+            sqlCommand = New MySqlCommand(sqlQuery, dbConn)
+            sqlRead = sqlCommand.ExecuteReader
+            dbConn.Close()
+
+            sqlRead.Close()
+            dbConn.Close()
+
+        Catch ex As Exception
+            Return ex.Message
+
+        Finally
+            dbConn.Dispose()
+        End Try
+
+
+    End Function
+
+    Public Function GetDataOrderDatabase() As DataTable
+        Dim result As New DataTable
+
+        dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" _
+            + "password=" + password + ";" + "database =" + database
+        dbConn.Open()
+        sqlCommand.Connection = dbConn
+        sqlCommand.CommandText = "SELECT id_order as 'ID Order',
+                                 id_barang as 'ID Barang',
+                                 jumlah_order as 'Jumlah Order',
+                                 tanggal_order as 'Tanggal Order',
+                                 status as 'Status'
+                                 FROM table_order"
+
+        sqlRead = sqlCommand.ExecuteReader
+
+        result.Load(sqlRead)
+        sqlRead.Close()
+        dbConn.Close()
+        Return result
+    End Function
+
+    Public Function GetDataOrderJoinBarangMasukBYIDOrderDatabase(id_order As Integer) As DataTable
+        Dim result As New DataTable
+
+        dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" _
+            + "password=" + password + ";" + "database =" + database
+        dbConn.Open()
+        sqlCommand.Connection = dbConn
+        sqlCommand.CommandText = "SELECT t.id_order as 'ID Order',
+                                 t.id_barang as 'ID Barang',
+                                 t.jumlah_order as 'Jumlah Order',
+                                 t.tanggal_order as 'Tanggal Order',
+                                 t.status as 'Status',
+                                 m.id_barang_masuk as 'ID Barang Masuk',
+                                 m.jumlah_masuk as 'Jumlah Masuk'
+                                 FROM table_order as t
+                                 JOIN barang_masuk as m ON t.id_order = m.id_order
+                                 WHERE t.id_order ='" & id_order & "'"
+
+        sqlRead = sqlCommand.ExecuteReader
+
+        result.Load(sqlRead)
+        sqlRead.Close()
+        dbConn.Close()
+        Return result
+    End Function
+
+    Public Function DeleteDataBarangMasukByBarangMasukDatabase(id_barang_masuk As Integer)
+        dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" _
+            + "password=" + password + ";" + "database =" + database
+
+        Try
+            dbConn.Open()
+            sqlCommand.Connection = dbConn
+            sqlQuery = "DELETE FROM barang_masuk " &
+                       "WHERE id_barang_masuk ='" & id_barang_masuk & "'"
+
+            Debug.WriteLine(sqlQuery)
+
+            sqlCommand = New MySqlCommand(sqlQuery, dbConn)
+            sqlRead = sqlCommand.ExecuteReader
+            dbConn.Close()
+
+            sqlRead.Close()
+            dbConn.Close()
+
+        Catch ex As Exception
+            Return ex.Message()
+
+        Finally
+            dbConn.Dispose()
+        End Try
+    End Function
+
+    Public Function DeleteDataOrderByIDOrderDatabase(id_order As Integer)
+        dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" _
+            + "password=" + password + ";" + "database =" + database
+
+        Try
+            dbConn.Open()
+            sqlCommand.Connection = dbConn
+            sqlQuery = "DELETE FROM table_order " &
+                       "WHERE id_order ='" & id_order & "'"
+
+            Debug.WriteLine(sqlQuery)
+
+            sqlCommand = New MySqlCommand(sqlQuery, dbConn)
+            sqlRead = sqlCommand.ExecuteReader
+            dbConn.Close()
+
+            sqlRead.Close()
+            dbConn.Close()
+
+        Catch ex As Exception
+            Return ex.Message()
+
+        Finally
+            dbConn.Dispose()
+        End Try
     End Function
 End Class

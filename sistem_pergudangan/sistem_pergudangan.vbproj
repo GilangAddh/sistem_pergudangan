@@ -6,12 +6,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{1E41B146-B228-4E72-8E32-B5AE98AA8152}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>sistem_pergudangan.Login</StartupObject>
+    <StartupObject>sistem_pergudangan.Barang_Masuk</StartupObject>
     <RootNamespace>sistem_pergudangan</RootNamespace>
     <AssemblyName>sistem_pergudangan</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
@@ -193,6 +193,18 @@
     <Compile Include="HapusJenisBarang.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Hapus_Barang_Masuk.Designer.vb">
+      <DependentUpon>Hapus_Barang_Masuk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hapus_Barang_Masuk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hapus_Order.Designer.vb">
+      <DependentUpon>Hapus_Order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hapus_Order.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Info Barang.Designer.vb">
       <DependentUpon>Info Barang.vb</DependentUpon>
     </Compile>
@@ -224,11 +236,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="My Project\Application.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Application.myapp</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -304,6 +311,12 @@
     <EmbeddedResource Include="HapusJenisBarang.resx">
       <DependentUpon>HapusJenisBarang.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Hapus_Barang_Masuk.resx">
+      <DependentUpon>Hapus_Barang_Masuk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hapus_Order.resx">
+      <DependentUpon>Hapus_Order.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Info Barang.resx">
       <DependentUpon>Info Barang.vb</DependentUpon>
     </EmbeddedResource>
@@ -341,7 +354,6 @@
   <ItemGroup>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
-      <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
