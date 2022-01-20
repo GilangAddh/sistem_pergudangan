@@ -248,3 +248,5 @@ C:\Users\USER\Documents\clone_sistem_pergudangan\sistem_pergudangan\sistem_pergu
 C:\Users\USER\Documents\clone_sistem_pergudangan\sistem_pergudangan\sistem_pergudangan\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\USER\Documents\clone_sistem_pergudangan\sistem_pergudangan\sistem_pergudangan\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\USER\Documents\clone_sistem_pergudangan\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.vbproj.CopyComplete
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Hapus_Barang_Masuk.resources
+C:\Users\Bintang Fajar Julio\source\repos\sistem_pergudangan\sistem_pergudangan\obj\Debug\sistem_pergudangan.Hapus_Order.resources

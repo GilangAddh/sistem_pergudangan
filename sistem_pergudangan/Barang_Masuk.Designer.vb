@@ -39,14 +39,17 @@ Partial Class Barang_Masuk
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Btn_Hapus_Barang_Masuk = New System.Windows.Forms.Button()
+        Me.ToolStripFormBarang = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripButtonBack = New System.Windows.Forms.ToolStripButton()
         CType(Me.DGV_Barang_Order, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ToolStripFormBarang.SuspendLayout()
         Me.SuspendLayout()
         '
         'DGV_Barang_Order
         '
         Me.DGV_Barang_Order.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGV_Barang_Order.Location = New System.Drawing.Point(12, 81)
+        Me.DGV_Barang_Order.Location = New System.Drawing.Point(12, 77)
         Me.DGV_Barang_Order.Name = "DGV_Barang_Order"
         Me.DGV_Barang_Order.Size = New System.Drawing.Size(810, 202)
         Me.DGV_Barang_Order.TabIndex = 0
@@ -54,7 +57,7 @@ Partial Class Barang_Masuk
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(856, 116)
+        Me.Label1.Location = New System.Drawing.Point(856, 112)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(47, 13)
         Me.Label1.TabIndex = 1
@@ -63,7 +66,7 @@ Partial Class Barang_Masuk
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(856, 218)
+        Me.Label2.Location = New System.Drawing.Point(856, 214)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(75, 13)
         Me.Label2.TabIndex = 2
@@ -71,21 +74,21 @@ Partial Class Barang_Masuk
         '
         'TxtBoxIDOrder
         '
-        Me.TxtBoxIDOrder.Location = New System.Drawing.Point(967, 113)
+        Me.TxtBoxIDOrder.Location = New System.Drawing.Point(967, 109)
         Me.TxtBoxIDOrder.Name = "TxtBoxIDOrder"
         Me.TxtBoxIDOrder.Size = New System.Drawing.Size(109, 20)
         Me.TxtBoxIDOrder.TabIndex = 3
         '
         'TxtboxJumlahMasuk
         '
-        Me.TxtboxJumlahMasuk.Location = New System.Drawing.Point(967, 211)
+        Me.TxtboxJumlahMasuk.Location = New System.Drawing.Point(967, 207)
         Me.TxtboxJumlahMasuk.Name = "TxtboxJumlahMasuk"
         Me.TxtboxJumlahMasuk.Size = New System.Drawing.Size(109, 20)
         Me.TxtboxJumlahMasuk.TabIndex = 4
         '
         'BtnSimpan
         '
-        Me.BtnSimpan.Location = New System.Drawing.Point(914, 652)
+        Me.BtnSimpan.Location = New System.Drawing.Point(915, 568)
         Me.BtnSimpan.Name = "BtnSimpan"
         Me.BtnSimpan.Size = New System.Drawing.Size(138, 33)
         Me.BtnSimpan.TabIndex = 5
@@ -94,7 +97,7 @@ Partial Class Barang_Masuk
         '
         'ButtonUpdate
         '
-        Me.ButtonUpdate.Location = New System.Drawing.Point(641, 652)
+        Me.ButtonUpdate.Location = New System.Drawing.Point(642, 568)
         Me.ButtonUpdate.Name = "ButtonUpdate"
         Me.ButtonUpdate.Size = New System.Drawing.Size(111, 33)
         Me.ButtonUpdate.TabIndex = 6
@@ -103,7 +106,7 @@ Partial Class Barang_Masuk
         '
         'Button_Tampilkan
         '
-        Me.Button_Tampilkan.Location = New System.Drawing.Point(967, 258)
+        Me.Button_Tampilkan.Location = New System.Drawing.Point(967, 254)
         Me.Button_Tampilkan.Name = "Button_Tampilkan"
         Me.Button_Tampilkan.Size = New System.Drawing.Size(91, 25)
         Me.Button_Tampilkan.TabIndex = 7
@@ -113,7 +116,7 @@ Partial Class Barang_Masuk
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(856, 162)
+        Me.Label3.Location = New System.Drawing.Point(856, 158)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(69, 13)
         Me.Label3.TabIndex = 8
@@ -121,7 +124,7 @@ Partial Class Barang_Masuk
         '
         'TextBoxJumlahOrder
         '
-        Me.TextBoxJumlahOrder.Location = New System.Drawing.Point(967, 155)
+        Me.TextBoxJumlahOrder.Location = New System.Drawing.Point(967, 151)
         Me.TextBoxJumlahOrder.Name = "TextBoxJumlahOrder"
         Me.TextBoxJumlahOrder.Size = New System.Drawing.Size(109, 20)
         Me.TextBoxJumlahOrder.TabIndex = 9
@@ -129,7 +132,7 @@ Partial Class Barang_Masuk
         'LabelStatus
         '
         Me.LabelStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelStatus.Location = New System.Drawing.Point(855, 305)
+        Me.LabelStatus.Location = New System.Drawing.Point(855, 301)
         Me.LabelStatus.Name = "LabelStatus"
         Me.LabelStatus.Size = New System.Drawing.Size(143, 20)
         Me.LabelStatus.TabIndex = 10
@@ -138,7 +141,7 @@ Partial Class Barang_Masuk
         'LabelIDBarang
         '
         Me.LabelIDBarang.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelIDBarang.Location = New System.Drawing.Point(1067, 305)
+        Me.LabelIDBarang.Location = New System.Drawing.Point(1067, 301)
         Me.LabelIDBarang.Name = "LabelIDBarang"
         Me.LabelIDBarang.Size = New System.Drawing.Size(114, 20)
         Me.LabelIDBarang.TabIndex = 11
@@ -146,7 +149,7 @@ Partial Class Barang_Masuk
         '
         'Button_Japus
         '
-        Me.Button_Japus.Location = New System.Drawing.Point(110, 652)
+        Me.Button_Japus.Location = New System.Drawing.Point(111, 568)
         Me.Button_Japus.Name = "Button_Japus"
         Me.Button_Japus.Size = New System.Drawing.Size(103, 33)
         Me.Button_Japus.TabIndex = 12
@@ -156,7 +159,7 @@ Partial Class Barang_Masuk
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 375)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 345)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(810, 202)
         Me.DataGridView1.TabIndex = 14
@@ -164,7 +167,7 @@ Partial Class Barang_Masuk
         'Label4
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(12, 33)
+        Me.Label4.Location = New System.Drawing.Point(12, 29)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(180, 25)
         Me.Label4.TabIndex = 15
@@ -173,7 +176,7 @@ Partial Class Barang_Masuk
         'Label5
         '
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(12, 321)
+        Me.Label5.Location = New System.Drawing.Point(12, 317)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(180, 25)
         Me.Label5.TabIndex = 16
@@ -181,18 +184,37 @@ Partial Class Barang_Masuk
         '
         'Btn_Hapus_Barang_Masuk
         '
-        Me.Btn_Hapus_Barang_Masuk.Location = New System.Drawing.Point(346, 652)
+        Me.Btn_Hapus_Barang_Masuk.Location = New System.Drawing.Point(347, 568)
         Me.Btn_Hapus_Barang_Masuk.Name = "Btn_Hapus_Barang_Masuk"
         Me.Btn_Hapus_Barang_Masuk.Size = New System.Drawing.Size(123, 33)
         Me.Btn_Hapus_Barang_Masuk.TabIndex = 17
         Me.Btn_Hapus_Barang_Masuk.Text = "Hapus Barang Masuk"
         Me.Btn_Hapus_Barang_Masuk.UseVisualStyleBackColor = True
         '
+        'ToolStripFormBarang
+        '
+        Me.ToolStripFormBarang.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButtonBack})
+        Me.ToolStripFormBarang.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStripFormBarang.Name = "ToolStripFormBarang"
+        Me.ToolStripFormBarang.Size = New System.Drawing.Size(1193, 25)
+        Me.ToolStripFormBarang.TabIndex = 19
+        Me.ToolStripFormBarang.Text = "ToolStrip1"
+        '
+        'ToolStripButtonBack
+        '
+        Me.ToolStripButtonBack.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButtonBack.Image = Global.sistem_pergudangan.My.Resources.Resources.back_exit
+        Me.ToolStripButtonBack.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButtonBack.Name = "ToolStripButtonBack"
+        Me.ToolStripButtonBack.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButtonBack.Text = "ToolStripButtonBack"
+        '
         'Barang_Masuk
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1193, 697)
+        Me.ClientSize = New System.Drawing.Size(1193, 612)
+        Me.Controls.Add(Me.ToolStripFormBarang)
         Me.Controls.Add(Me.Btn_Hapus_Barang_Masuk)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -214,6 +236,8 @@ Partial Class Barang_Masuk
         Me.Text = "Barang_Masuk"
         CType(Me.DGV_Barang_Order, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ToolStripFormBarang.ResumeLayout(False)
+        Me.ToolStripFormBarang.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -236,4 +260,6 @@ Partial Class Barang_Masuk
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Btn_Hapus_Barang_Masuk As Button
+    Friend WithEvents ToolStripFormBarang As ToolStrip
+    Friend WithEvents ToolStripButtonBack As ToolStripButton
 End Class

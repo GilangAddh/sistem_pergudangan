@@ -5,8 +5,6 @@
     Public Shared selectedstockbarang
     Public Shared selectedJumlahOrder As String
 
-
-
     Public Sub New()
 
         ' This call is required by the designer.
@@ -17,28 +15,16 @@
         TextBox_TanggalOrder.Text = Data_Barang.orderbarang.GSTanggalOrder
         DateTimePicker_TanggalOrder.Format = DateTimePickerFormat.Custom
         DateTimePicker_TanggalOrder.CustomFormat = "yyyy/MM/dd"
-
     End Sub
 
     Private Sub Button_Cari_Click(sender As Object, e As EventArgs) Handles Button_Cari.Click
         Dim dataBarang = New Data_Barang()
 
-
-
         dataBarang.Show()
-
-
-
     End Sub
-
-
 
     Private Sub ReloadDataBarangJoinOrderDatabase()
         DGV_Barang_Order.DataSource = Data_Barang.orderbarang.GetDataOrderJoinBarangDatabase(LabelIDBarang.Text)
-    End Sub
-
-    Private Sub Form_Order_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-
     End Sub
 
     Private Sub DGV_Barang_Order_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DGV_Barang_Order.CellMouseClick
@@ -48,10 +34,6 @@
     End Sub
 
     Private Sub Button_Simpan_Click(sender As Object, e As EventArgs) Handles Button_Simpan.Click
-
-
-
-
         Data_Barang.orderbarang.GSJumlahOrder = Integer.Parse(TxtB_JumlahOrder.Text)
         Data_Barang.orderbarang.GSTanggalOrder = TextBox_TanggalOrder.Text
         Data_Barang.orderbarang.GSIDBarang = LabelIDBarang.Text
@@ -62,9 +44,6 @@
                                                           Data_Barang.orderbarang.GSNamaBarang)
 
         ReloadDataBarangJoinOrderDatabase()
-
-
-
     End Sub
 
     Private Sub Btn_Tampilkan_Click(sender As Object, e As EventArgs) Handles Btn_Tampilkan.Click
@@ -77,24 +56,36 @@
         selectedRow = DGV_Barang_Order.Rows(index)
 
         selecttableorderbarang = selectedRow.Cells(0).Value
-
     End Sub
-
-   
 
     Private Sub Button_Tambah_Click(sender As Object, e As EventArgs) Handles Button_Tambah.Click
-
         Dim BM = New Barang_Masuk
-
         BM.Show()
-
-
-
     End Sub
 
-    Private Sub Button_Order_Lagi_Click(sender As Object, e As EventArgs) 
+    Private Sub Button_Order_Lagi_Click(sender As Object, e As EventArgs)
         Dim FO = New Form_Order()
-
         FO.Show()
+    End Sub
+
+    Private Sub ToolStripButtonBack_Click(sender As Object, e As EventArgs) Handles ToolStripButtonBack.Click
+        MessageBox.Show("Anda sudah logout")
+        Dim login = New Login()
+        login.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub ToolStripMenuJenis_Click(sender As Object, e As EventArgs) Handles ToolStripMenuJenis.Click
+        MessageBox.Show("Anda mengakses Jenis Barang")
+        Dim jenisBarang = New JenisBarang()
+        jenisBarang.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
+        MessageBox.Show("Anda mengakses Data Barang")
+        Dim dataBarang = New Form_Barang()
+        dataBarang.Show()
+        Me.Close()
     End Sub
 End Class

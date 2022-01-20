@@ -42,13 +42,16 @@
 
     Private Sub Barang_Masuk_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         ReloadDataOrderDatabase()
-
+        ReloadDataBarangMasuk()
     End Sub
 
     Private Sub DGV_Barang_Order_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DGV_Barang_Order.CellMouseClick
         JumlahOrder = DGV_Barang_Order.Rows(e.RowIndex).Cells(2).Value
         IDORDER = DGV_Barang_Order.Rows(e.RowIndex).Cells(0).Value
         IDbarang = DGV_Barang_Order.Rows(e.RowIndex).Cells(1).Value
+
+        TxtBoxIDOrder.Text = IDORDER
+        TextBoxJumlahOrder.Text = JumlahOrder
     End Sub
 
 
@@ -149,4 +152,10 @@
 
         HBM.Show()
     End Sub
+
+    Private Sub ToolStripButtonBack_Click(sender As Object, e As EventArgs) Handles ToolStripButtonBack.Click
+        Me.Close()
+    End Sub
+
+
 End Class

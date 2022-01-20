@@ -600,7 +600,8 @@ Public Class Barang
     End Function
 
     Public Function UpdateStockByIDDatabase(ID As Integer,
-                                       stockBarang As Integer)
+                                       stockBarang As Integer,
+                                       waktuPembaharuan As String)
 
         dbConn.ConnectionString = "server =" + server + ";" + "user id=" + username + ";" _
             + "password=" + password + ";" + "database =" + database
@@ -608,7 +609,8 @@ Public Class Barang
             dbConn.Open()
             sqlCommand.Connection = dbConn
             sqlQuery = "UPDATE barang SET " &
-                       "stock='" & stockBarang & "' " &
+                       "stock='" & stockBarang & "', " &
+                       "tanggal_terakhir_diperbarui='" & waktuPembaharuan & "' " &
                        "WHERE id_barang='" & ID & "'"
 
             sqlCommand = New MySqlCommand(sqlQuery, dbConn)

@@ -28,7 +28,6 @@ Partial Class Form_Barang
         Me.ToolStripMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuJenis = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuMasukBarang = New System.Windows.Forms.ToolStripMenuItem()
         Me.LblCaptKapasitas = New System.Windows.Forms.Label()
         Me.LblKapasitasTersedia = New System.Windows.Forms.Label()
         Me.LblSortKatalog = New System.Windows.Forms.Label()
@@ -64,6 +63,7 @@ Partial Class Form_Barang
         Me.LblNamaBarangInfo = New System.Windows.Forms.Label()
         Me.LblIDJenisInfo = New System.Windows.Forms.Label()
         Me.LblStockInfo = New System.Windows.Forms.Label()
+        Me.ToolStripMenuMasukBarang = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripFormBarang.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.DataGridViewKatalog, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -115,12 +115,6 @@ Partial Class Form_Barang
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
         Me.ToolStripMenuItem3.Size = New System.Drawing.Size(180, 22)
         Me.ToolStripMenuItem3.Text = "Order Barang"
-        '
-        'ToolStripMenuMasukBarang
-        '
-        Me.ToolStripMenuMasukBarang.Name = "ToolStripMenuMasukBarang"
-        Me.ToolStripMenuMasukBarang.Size = New System.Drawing.Size(180, 22)
-        Me.ToolStripMenuMasukBarang.Text = "Masuk Barang"
         '
         'LblCaptKapasitas
         '
@@ -426,6 +420,12 @@ Partial Class Form_Barang
         Me.LblStockInfo.TabIndex = 80
         Me.LblStockInfo.Text = "Stock:"
         '
+        'ToolStripMenuMasukBarang
+        '
+        Me.ToolStripMenuMasukBarang.Name = "ToolStripMenuMasukBarang"
+        Me.ToolStripMenuMasukBarang.Size = New System.Drawing.Size(180, 22)
+        Me.ToolStripMenuMasukBarang.Text = "Masuk Barang"
+        '
         'Form_Barang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -487,7 +487,6 @@ Partial Class Form_Barang
     Friend WithEvents ToolStripMenu As ToolStripMenuItem
     Friend WithEvents ToolStripMenuJenis As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuMasukBarang As ToolStripMenuItem
     Friend WithEvents PnlLogo As Panel
     Friend WithEvents LblCaptKapasitas As Label
     Friend WithEvents LblKapasitasTersedia As Label
@@ -523,4 +522,5 @@ Partial Class Form_Barang
     Friend WithEvents LblNamaBarangInfo As Label
     Friend WithEvents LblIDJenisInfo As Label
     Friend WithEvents LblStockInfo As Label
+    Friend WithEvents ToolStripMenuMasukBarang As ToolStripMenuItem
 End Class

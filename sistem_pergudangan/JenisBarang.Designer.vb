@@ -32,7 +32,6 @@ Partial Class JenisBarang
         Me.ToolStripMenu = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuData = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuMasukBarang = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         CType(Me.DataGridJenisBarang, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -112,7 +111,7 @@ Partial Class JenisBarang
         '
         'ToolStripMenu
         '
-        Me.ToolStripMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuData, Me.ToolStripMenuItem3, Me.ToolStripMenuMasukBarang})
+        Me.ToolStripMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuData, Me.ToolStripMenuItem3})
         Me.ToolStripMenu.Name = "ToolStripMenu"
         Me.ToolStripMenu.Size = New System.Drawing.Size(53, 20)
         Me.ToolStripMenu.Text = "Menu "
@@ -128,12 +127,6 @@ Partial Class JenisBarang
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
         Me.ToolStripMenuItem3.Size = New System.Drawing.Size(180, 22)
         Me.ToolStripMenuItem3.Text = "Order Barang"
-        '
-        'ToolStripMenuMasukBarang
-        '
-        Me.ToolStripMenuMasukBarang.Name = "ToolStripMenuMasukBarang"
-        Me.ToolStripMenuMasukBarang.Size = New System.Drawing.Size(180, 22)
-        Me.ToolStripMenuMasukBarang.Text = "Masuk Barang"
         '
         'ToolStrip1
         '
@@ -188,7 +181,6 @@ Partial Class JenisBarang
     Friend WithEvents ToolStripMenu As ToolStripMenuItem
     Friend WithEvents ToolStripMenuData As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuMasukBarang As ToolStripMenuItem
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents ToolStripButton1 As ToolStripButton
 End Class

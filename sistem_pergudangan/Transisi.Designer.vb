@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Transisi
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,13 +20,12 @@ Partial Class Transisi
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.PnlLogo = New System.Windows.Forms.Panel()
         Me.BtnAksesJenisBarang = New System.Windows.Forms.Button()
         Me.BtnAksesBarang = New System.Windows.Forms.Button()
         Me.BtnAksesOrder = New System.Windows.Forms.Button()
-        Me.BtnMasukBarang = New System.Windows.Forms.Button()
         Me.ToolStripTransisi = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButtonBack = New System.Windows.Forms.ToolStripButton()
         Me.LblPilih = New System.Windows.Forms.Label()
@@ -69,15 +68,6 @@ Partial Class Transisi
         Me.BtnAksesOrder.Text = "Akses Order Barang"
         Me.BtnAksesOrder.UseVisualStyleBackColor = True
         '
-        'BtnMasukBarang
-        '
-        Me.BtnMasukBarang.Location = New System.Drawing.Point(50, 310)
-        Me.BtnMasukBarang.Name = "BtnMasukBarang"
-        Me.BtnMasukBarang.Size = New System.Drawing.Size(171, 23)
-        Me.BtnMasukBarang.TabIndex = 43
-        Me.BtnMasukBarang.Text = "Akses Masuk Barang"
-        Me.BtnMasukBarang.UseVisualStyleBackColor = True
-        '
         'ToolStripTransisi
         '
         Me.ToolStripTransisi.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButtonBack})
@@ -110,10 +100,9 @@ Partial Class Transisi
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(268, 356)
+        Me.ClientSize = New System.Drawing.Size(268, 302)
         Me.Controls.Add(Me.LblPilih)
         Me.Controls.Add(Me.ToolStripTransisi)
-        Me.Controls.Add(Me.BtnMasukBarang)
         Me.Controls.Add(Me.BtnAksesOrder)
         Me.Controls.Add(Me.BtnAksesBarang)
         Me.Controls.Add(Me.BtnAksesJenisBarang)
@@ -131,7 +120,6 @@ Partial Class Transisi
     Friend WithEvents BtnAksesJenisBarang As Button
     Friend WithEvents BtnAksesBarang As Button
     Friend WithEvents BtnAksesOrder As Button
-    Friend WithEvents BtnMasukBarang As Button
     Friend WithEvents ToolStripTransisi As ToolStrip
     Friend WithEvents ToolStripButtonBack As ToolStripButton
     Friend WithEvents LblPilih As Label

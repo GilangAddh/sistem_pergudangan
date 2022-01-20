@@ -10,13 +10,6 @@
 
         ' Add any initialization after the InitializeComponent() call.
         orderbarang = New ClassOrder
-
-    End Sub
-
-
-
-    Private Sub Data_Barang_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-
     End Sub
 
     Private Sub DGV_Data_Barang_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DGV_Data_Barang.CellMouseClick
@@ -31,7 +24,6 @@
     Private Sub Button_Pilih_Click(sender As Object, e As EventArgs) Handles Button_Pilih.Click
         Form_Order.TxtBox_NamaBarang.Text = NamaBarang
         Form_Order.LabelIDBarang.Text = IDBarang
-
     End Sub
 
     Private Sub Button_Cari_Data_Click(sender As Object, e As EventArgs) Handles Button_Cari_Data.Click

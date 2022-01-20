@@ -17,8 +17,11 @@
     End Sub
 
     Private Sub BtnUpdateStock_Click(sender As Object, e As EventArgs) Handles BtnUpdateStock.Click
+        Dim today = Date.Now()
+        Form_Barang.barang.TerakhirPembaharuanProperty = today.ToString("yyyy/MM/dd")
+
         Form_Barang.barang.StockBarangProperty = LblStock.Text
-        Form_Barang.barang.UpdateStockByIDDatabase(Form_Barang.selectedTableKoleksi, Form_Barang.barang.StockBarangProperty)
+        Form_Barang.barang.UpdateStockByIDDatabase(Form_Barang.selectedTableKoleksi, Form_Barang.barang.StockBarangProperty, Form_Barang.barang.TerakhirPembaharuanProperty)
         MessageBox.Show("Stock " + Form_Barang.barang.NamaBarangProperty + " diperbarui")
         Dim infoBarang = New Info_Barang()
         infoBarang.Show()

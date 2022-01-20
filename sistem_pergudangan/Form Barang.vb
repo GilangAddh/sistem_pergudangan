@@ -230,4 +230,18 @@
         jenisBarang.Show()
         Me.Close()
     End Sub
+
+    Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
+        MessageBox.Show("Anda Mengakses Order Barang")
+        Dim orderBarang = New Form_Order()
+        orderBarang.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub ToolStripMenuMasukBarang_Click(sender As Object, e As EventArgs) Handles ToolStripMenuMasukBarang.Click
+        MessageBox.Show("Anda Mengakses Barang Masuk")
+        Dim barangMasuk = New Barang_Masuk()
+        barangMasuk.Show()
+        Me.Close()
+    End Sub
 End Class
