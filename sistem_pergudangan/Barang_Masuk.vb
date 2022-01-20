@@ -96,10 +96,7 @@
 
 
 
-        Form_Order.DGV_Barang_Order.DataSource = Data_Barang.orderbarang.GetDataOrderJoinBarangDatabase(Form_Order.LabelIDBarang.Text)
-
-
-
+        Form_Order.DGV_Barang_Order.DataSource = Data_Barang.orderbarang.GetDataOrderJoinBarangDatabase(Data_Barang.orderbarang.GSIDBarang)
     End Sub
 
     Private Sub BtnSimpan_Click(sender As Object, e As EventArgs) Handles BtnSimpan.Click

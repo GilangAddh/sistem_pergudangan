@@ -88,4 +88,9 @@
         dataBarang.Show()
         Me.Close()
     End Sub
+
+    Private Sub Form_Order_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        TxtBox_NamaBarang.Text = Data_Barang.orderbarang.GSNamaBarang
+        LabelIDBarang.Text = Data_Barang.orderbarang.GSIDBarang
+    End Sub
 End Class

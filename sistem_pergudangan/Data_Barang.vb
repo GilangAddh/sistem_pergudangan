@@ -22,8 +22,9 @@
     End Sub
 
     Private Sub Button_Pilih_Click(sender As Object, e As EventArgs) Handles Button_Pilih.Click
-        Form_Order.TxtBox_NamaBarang.Text = NamaBarang
-        Form_Order.LabelIDBarang.Text = IDBarang
+        orderbarang.GSNamaBarang = NamaBarang
+        orderbarang.GSIDBarang = IDBarang
+        MessageBox.Show(NamaBarang + " berhasil dipilih")
     End Sub
 
     Private Sub Button_Cari_Data_Click(sender As Object, e As EventArgs) Handles Button_Cari_Data.Click

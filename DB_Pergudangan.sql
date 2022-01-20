@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `barang_masuk` (
   PRIMARY KEY (`id_barang_masuk`),
   KEY `FK_barangmasuk_order` (`id_order`),
   CONSTRAINT `FK_barang_masuk_table_order` FOREIGN KEY (`id_order`) REFERENCES `table_order` (`id_order`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4;
 
 -- Data exporting was unselected.
 
@@ -67,11 +67,11 @@ CREATE TABLE IF NOT EXISTS `table_order` (
   `id_barang` int(11) unsigned NOT NULL,
   `jumlah_order` int(11) NOT NULL DEFAULT 0,
   `tanggal_order` date NOT NULL,
-  `status` varchar(50) NOT NULL DEFAULT '0',
+  `status` varchar(50) NOT NULL DEFAULT 'Tidak Terpenuhi',
   PRIMARY KEY (`id_order`),
   KEY `FK_id_barang` (`id_barang`),
   CONSTRAINT `FK_id_barang` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id_barang`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4;
 
 -- Data exporting was unselected.
 
