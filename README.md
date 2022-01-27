@@ -1,7 +1,6 @@
-Sistem Pergudangan
-
-Class:
-Users
+#Sistem Pergudangan
+#Class:
+#Users
 Barang
 Jenis Barang
 Order
