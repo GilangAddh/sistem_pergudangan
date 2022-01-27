@@ -1,13 +1,13 @@
 Sistem Pergudangan
 
-Class :
+Class:
 Users
 Barang
 Jenis Barang
 Order
 Masuk
 
-Form :
+Form:
 Sign In
 Sign Up
 
